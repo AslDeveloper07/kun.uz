@@ -1,0 +1,10 @@
+h1{
+    color: rebeccapurple;
+    font-size: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
