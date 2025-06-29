@@ -288,43 +288,42 @@ li {
 }
 /* word animative footer */
 
+.word-container {
+  display: flex;
+  gap: 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
 
-  .word-container {
-    display: flex;
-    gap: 20px;
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
+.word-item {
+  position: relative;
+  overflow: hidden;
+  height: 1.5rem;
+  cursor: pointer;
+}
 
-  .word-item {
-    position: relative;
-    overflow: hidden;
-    height: 1.5rem;
-    cursor: pointer;
-  }
+.normal-word {
+  display: block;
+  visibility: visible;
+}
 
-  .normal-word {
-    display: block;
-    visibility: visible;
-  }
+.hover-word {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-  .hover-word {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
+.word-item:hover .normal-word {
+  visibility: hidden;
+}
 
-  .word-item:hover .normal-word {
-    visibility: hidden;
-  }
-
-  .word-item:hover .hover-word {
-    opacity: 1;
-    visibility: visible;
-    color: var(--color_blues);
-    transform: translateY(-100%);
-  }
+.word-item:hover .hover-word {
+  opacity: 1;
+  visibility: visible;
+  color: var(--color_blues);
+  transform: translateY(-100%);
+}
