@@ -1,4 +1,4 @@
-export default document.addEventListener("DOMContentLoaded", function () {
+export default document.addEventListener("DOMContentLoaded", () => {
   const toggleSwitch = document.getElementById("switch");
   const body = document.body;
   const navbar = document.querySelector(".navbar");
@@ -7,61 +7,52 @@ export default document.addEventListener("DOMContentLoaded", function () {
   const burgerSpans = document.querySelectorAll(".burger span");
   const logoImg = document.querySelector(".toggleTheme");
 
-  function setTheme(isDark) {
-    // LOGO rasmi almashtirish
-    if (logoImg) {
-      const imgPath = isDark
-        ? "./assets/svg/Logo.svg"
-        : "./assets/img/logo-light.svg";
-      logoImg.setAttribute("src", imgPath);
-    }
+  function applyTheme(theme) {
+    const isDark = theme === "dark";
 
-    // Dark mode
-    if (isDark) {
-      body.classList.remove("theme-light");
-      body.classList.add("theme-dark");
-      localStorage.setItem("theme", "dark");
-      body.style.backgroundColor = "#1A1B1D";
-      if (navbar) navbar.style.backgroundColor = "#1E242D";
-      body.style.color = "#ffffff";
-      if (globeIcon) globeIcon.style.color = "#ffffff";
-      if (languageLabel) languageLabel.style.color = "#ffffff";
-      burgerSpans.forEach((span) => (span.style.backgroundColor = "#ffffff"));
-    } else {
-      // Light mode
-      body.classList.remove("theme-dark");
-      body.classList.add("theme-light");
-      localStorage.setItem("theme", "light");
-      body.style.backgroundColor = "#ffffff";
-      if (navbar) navbar.style.backgroundColor = "#ffffff";
-      body.style.color = "#000000";
-      if (globeIcon) globeIcon.style.color = "#000000";
-      if (languageLabel) languageLabel.style.color = "#000000";
-      burgerSpans.forEach((span) => (span.style.backgroundColor = "#000000"));
+    // Set body class
+    body.classList.toggle("theme-dark", isDark);
+    body.classList.toggle("theme-light", !isDark);
+
+    // Save theme
+    localStorage.setItem("theme", theme);
+
+    // Colors
+    body.style.backgroundColor = isDark ? "#1A1B1D" : "#ffffff";
+    body.style.color = isDark ? "#ffffff" : "#000000";
+    if (navbar) navbar.style.backgroundColor = isDark ? "#1E242D" : "#ffffff";
+    if (globeIcon) globeIcon.style.color = isDark ? "#ffffff" : "#000000";
+    if (languageLabel) languageLabel.style.color = isDark ? "#ffffff" : "#000000";
+    burgerSpans.forEach(span => {
+      span.style.backgroundColor = isDark ? "#ffffff" : "#000000";
+    });
+
+    // Logo image
+    if (logoImg) {
+      const imgSrc = isDark ? "./assets/svg/Logo.svg" : "./assets/img/logo-light.svg";
+      logoImg.setAttribute("src", imgSrc);
     }
   }
 
-  // Saqlangan tema yoki tizim bo‘yicha aniqlash
+  // Detect saved or system theme
   const savedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const currentTheme = savedTheme || (prefersDark ? "dark" : "light");
 
-  if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-    toggleSwitch.checked = true;
-    setTheme(true);
-  }
+  toggleSwitch.checked = currentTheme === "dark";
+  applyTheme(currentTheme);
 
-  // Toggle tugmasi bosilganda
-  toggleSwitch.addEventListener("change", function (e) {
-    setTheme(e.target.checked);
+  // Toggle switch
+  toggleSwitch.addEventListener("change", () => {
+    applyTheme(toggleSwitch.checked ? "dark" : "light");
   });
 
-  // OS temasining avtomatik o‘zgarishini kuzatish
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
-      if (!localStorage.getItem("theme")) {
-        setTheme(e.matches);
-        toggleSwitch.checked = e.matches;
-      }
-    });
+  // OS-level theme change
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+    if (!localStorage.getItem("theme")) {
+      const newTheme = e.matches ? "dark" : "light";
+      toggleSwitch.checked = newTheme === "dark";
+      applyTheme(newTheme);
+    }
+  });
 });
