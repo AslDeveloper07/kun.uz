@@ -327,3 +327,97 @@ li {
   color: var(--color_blues);
   transform: translateY(-100%);
 }
+/* UIVERSE button style */
+
+  .btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 0;
+    min-width: 6.5rem;
+    min-height: 1.92rem;
+    border-radius: 9999px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.51, 0.026, 0.368, 1.016);
+    border: none;
+    /* border: 1px solid rgba(0, 0, 255, 0.199); */
+    /* box-shadow: inset 1px 2px 5px #00000080; */
+  }
+
+  .btn-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.25rem 0.25rem;
+  }
+
+  .hover-bg {
+    width: 0%;
+    height: 100%;
+    transition: all 1s cubic-bezier(0.51, 0.026, 0.368, 1.016);
+  }
+
+  .btn-icon {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_blue); /* Tailwind's green-400 */
+    transition: all 1s cubic-bezier(0.51, 0.026, 0.368, 1.016);
+  }
+
+  .btn-icon-arrow {
+    width: 0.8rem;
+    height: 0.8rem;
+    color: rgb(255, 247, 138);
+    transition: all 1s cubic-bezier(0.51, 0.026, 0.368, 1.016);
+  }
+
+  .btn-text {
+    padding-left: 3.4rem;
+    padding-right: 1.1rem;
+    color: var(--color_blue);
+    transition: all 1s cubic-bezier(0.51, 0.026, 0.368, 1.016);
+  }
+
+  /* Hover holati */
+  .btn:hover {
+    background-color: var(--color_blue);
+  }
+
+  .btn:hover .hover-bg {
+    width: 100%;
+  }
+
+  .btn:hover .btn-icon {
+    background-color: rgb(255, 247, 138);
+  }
+
+  .btn:hover .btn-icon-arrow {
+    color: var(--color_blue);
+    transform: rotate(-45deg);
+  }
+
+  .btn:hover .btn-text {
+    padding-left: 1.1rem;
+    padding-right: 3.4rem;
+    color: var(--color_white);
+  }
+
+/* Div animatsion style  */
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

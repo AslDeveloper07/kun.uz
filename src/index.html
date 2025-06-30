@@ -101,7 +101,7 @@
 
         <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
         <div class="news_big flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
-            <div class="flex flex-col">
+            <div class="flex flex-col ">
                 <h1 class="text-xl mt-[-10px] md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
                     Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
                     hafta dayjesti
@@ -128,9 +128,42 @@
 
         <!-- So‘nggi yangiliklar -->
         <div
-            class="songi_news flex flex-col gap-3 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
-            <div class="h-full bg-red-200 p-6">Lorem ipsum dolor sit amet consectetur...</div>
-            <div class="h-full bg-green-200 p-6">Lorem ipsum dolor sit amet consectetur...</div>
+            class="songi_news flex flex-col gap-3 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem] ">
+
+
+
+
+
+
+<div
+  class="group h-full bg-red-200 p-6  outline outline-[3px] outline-black  hover:shadow-[10px_10px_0_#000] transition-all duration-100 ease-out hover:-translate-x-1 hover:-translate-y-1 active:translate-x-1 active:translate-y-1   active:border-black  relative overflow-hidden">
+  <div class="relative z-10">
+    <div class="grid grid-cols-2 gap-[1px] w-[26px] h-[26px] mr-2 mb-2 group-hover:rotate-[-10deg] group-hover:scale-[1.1] group-active:rotate-[10deg] group-active:scale-[0.9] transition-transform duration-200 ease-out">
+
+    </div>
+    <div class="flex flex-col leading-tight group-hover:skew-x-[-5deg] group-active:skew-x-[5deg] transition-transform duration-200 ease-out">
+
+    </div>
+    <p class="mt-4">Lorem ipsum dolor sit amet consectetur...</p>
+  </div>
+
+  <!-- shine effect -->
+  <div class="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-0 group-hover:opacity-100 animate-[slide_2s_infinite] z-0"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+            <div
+                class="h-full bg-red-200 p-6 hover:shadow-custom-green hover:scale-[1.05] transition-transform shadow duration-[600ms] ease">
+                Lorem ipsum dolor sit amet consectetur...
+            </div>
         </div>
     </main>
 
@@ -148,12 +181,21 @@
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Video yangiliklar</h1>
-            <button class="learn-more relative inline-flex items-center bg-transparent text-inherit font-inherit w-48 py-2 px-0">
-  <span class="circle w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.65,0,0.076,1)]">
-    <i class="ri-arrow-right-line text-white text-lg arrow transition-all duration-500 ease-[cubic-bezier(0.65,0,0.076,1)]"></i>
-  </span>
-  <span class="button-text absolute left-0 right-0 text-center text-base font-bold uppercase text-gray-900 ml-16 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.076,1)]">Learn More</span>
-</button>
+        <button class="btn">
+            <div class="btn-inner">
+                <div class="hover-bg"></div>
+                <div class="btn-icon">
+                    <div class="btn-icon-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="100%"
+                            width="100%">
+                            <path fill="currentColor"
+                                d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-text">Hamkorlik qilish</div>
+        </button>
 
     </div>
 
@@ -187,8 +229,8 @@
         <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
     </div>
 
-    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <div class="flex items-center gap-5">
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
+        <div class="flex justify-between items-center gap-5">
             <img class="hidden md:block w-[100px] h-[100px] rounded-full"
                 src="https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg"
                 alt="this is israil and eron wars">
@@ -203,6 +245,21 @@
                 </p>
             </div>
         </div>
+        <button class="btn">
+            <div class="btn-inner">
+                <div class="hover-bg"></div>
+                <div class="btn-icon">
+                    <div class="btn-icon-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" height="100%"
+                            width="100%">
+                            <path fill="currentColor"
+                                d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-text">Hamkorlik qilish</div>
+        </button>
     </div>
 
     <div
