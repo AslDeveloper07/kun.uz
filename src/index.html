@@ -11,13 +11,13 @@
 </head>
 
 <body class="min-h-screen bg-gradient-to-b from-[#DBDBDB] to-[#ffffff]">
-    <header class="header mt-40">
+    <header class="header m-0 md:mt-40">
         <nav
             class="navbar  flex justify-between items-center  rounded-lg bg-white w-full max-w-[1700px] mx-auto pt-3 pb-3 pl-6 pr-6">
             <div class="logo">
-                <img class="w-28" src="./assets/img/logo-light.svg" alt="this is logo ">
+                <img class="w-[70px] md:w-28" src="./assets/img/logo-light.svg" alt="this is logo ">
             </div>
-            <ul class="flex gap-10 text-xl font-bold ">
+            <ul class="hidden md:flex gap-10 text-xl font-bold">
                 <li><a href="#">Oʻzbekiston</a></li>
                 <li><a href="#"></a>Jahon</li>
                 <li><a href="#"></a>Iqtisodiyot</li>
@@ -40,7 +40,7 @@
                     </section>
                 </label>
                 <!-- From Uiverse.io by santosh-sarkar -->
-                <label for="switch" class="toggle">
+                <label for="switch" class="toggle ">
                     <input type="checkbox" class="input" id="switch" />
                     <div class="icon icon--moon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32"
@@ -62,7 +62,7 @@
                 </label>
 
                 <!-- From Uiverse.io by Cevorob -->
-                <label class="burger" for="burger">
+                <label class="burger hidden md:block" for="burger">
                     <input type="checkbox" id="burger">
                     <span></span>
                     <span></span>
@@ -71,18 +71,30 @@
             </div>
         </nav>
         <div
-            class="new_list w-full max-w-[1700px] mx-auto py-[15px] px-[27px] font-semibold border-b-2 border-[#DBDBDB] text-xl">
+            class="new_list overflow-auto  md:w-full max-w-[1700px] mx-auto py-[15px] px-[27px] font-semibold border-b-2 border-[#DBDBDB] text-xl">
             <ul class="flex justify-between">
-                <li class="list-disc hover:text-blue-900"><a href="#">Isroil–Eron urushi</a></li>
-                <li class="list-disc hover:text-blue-900"><a href="#">Ukrainada tinchlik muzokaralari</a></li>
-                <li class="list-disc hover:text-blue-900"><a href="#">Trampning savdo urushi</a></li>
-                <li class="list-disc hover:text-blue-900"><a href="#">Rossiya-Ukraina urushi</a></li>
+                <li class="md:list-disc hover:text-blue-900"><a href="#">Isroil–Eron urushi</a></li>
+                <li class="md:list-disc hover:text-blue-900"><a href="#">Ukrainada tinchlik muzokaralari</a></li>
+                <li class="md:list-disc hover:text-blue-900"><a href="#">Trampning savdo urushi</a></li>
+                <li class="md:list-disc hover:text-blue-900"><a href="#">Rossiya-Ukraina urushi</a></li>
             </ul>
         </div>
     </header>
 
     <main class="news grid grid-cols-12 grid-rows-12 gap-6 w-full max-w-[1700px] mx-auto mt-5">
-        <div class="news_big col-span-9 row-span-6 bg-red-200 ">3</div>
+        <div class="news_big flex col-span-9 row-span-6  ">
+            <div class="flex flex-col">
+                <h1 class="text-4xl font-bold mt-10 mb-8 hover:text-blue-900 cursor-pointer ">
+                    Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
+                    hafta dayjesti
+                </h1>
+                <p class="text-xl">
+
+                            Toshkent bosqiniga 160 yil to‘ldi: o‘zbek tarixchilari bu mavzuni milliy rakursdan yoritishga, rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda. Pensiya yoshi oshirilishi mumkin: rasmiylar buni istisno qilmayapti. Prezident administratsiyasiga Saida Mirziyoyeva rahbar bo‘ldi, Komil Allamjonov 3-marta administratsiyada ish boshladi. Ortda qolayotgan hafta yangiliklari – Kun.uz dayjestida.
+                </p>
+            </div>
+            <img class=" w-[700px] h-[500px] object-cover" src="	https://storage.kun.uz/source/thumbnails/_medium/11/zq62kKgPRGiQQ5QQB8WyrQ42YQjvxug7_medium.jpg" alt="This is news image ">
+        </div>
         <div class="jahon col-span-3 col-start-10 row-span-12 bg-blue-200">4</div>
         <div class="animative_news col-span-6 row-span-6 row-start-7 bg-green-200">5</div>
         <div class="songi_news flex flex-col gap-3  col-span-3 col-start-7 row-span-6 row-start-7 min-h-[37rem]">
@@ -137,8 +149,16 @@
     </div>
 
     <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
-        <h1 class="text-4xl font-bold">
+        <div class="flex justify-center items-center gap-5">
+            <img class="w-[100px] h-[100px] rounded-full" src="	https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg" alt="this is israil and eron wars">
+        <div class="flex flex-col">
+            <h1 class="text-4xl font-bold">
             Isroil–Eron urushi (2025)</h1>
+            <p class="w-[900px] text-base">
+                2025 yil 13 iyunga o‘tar kechasi Isroil Eronning harbiy va yadroviy obektlariga zarbalar berishni boshladi. Bunga javoban Tehron Isroil ustidan bombalar yog‘dirdi. 12 kun davom etgan urush, AQShning Eron yadro obektlariga hujum qilishi bilan yakunlandi.
+            </p>
+        </div>
+        </div>
     </div>
     <div class="grid grid-cols-6 grid-rows-2 gap-2 w-full max-w-[1700px] mx-auto mt-5">
         <div class="col-span-3 bg-blue-200 flex items-center justify-center h-[200px]">1</div>
@@ -162,26 +182,8 @@
             <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#48e762e4] text-white">
                 Slide 3
             </swiper-slide>
-            <!-- <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 4
-            </swiper-slide>
-            <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 5
-            </swiper-slide>
-            <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 6
-            </swiper-slide>
-            <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 7
-            </swiper-slide>
-            <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 8
-            </swiper-slide>
-            <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#444] text-white">
-                Slide 9
-            </swiper-slide> -->
-        </swiper-container>
 
+        </swiper-container>
     </div>
 
 
