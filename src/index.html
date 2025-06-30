@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-[#DBDBDB] to-[#ffffff]">
+<body class="md:min-h-screen bg-gradient-to-b from-[#DBDBDB] to-[#ffffff]">
     <header class="header m-0 md:mt-40">
         <nav
-            class="navbar  flex justify-between items-center  rounded-lg bg-white w-full max-w-[1700px] mx-auto pt-3 pb-3 pl-6 pr-6">
+            class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg pt-0 pb-0 pl-3 pr-3 md:pl-6 md:pr-6"
+
             <div class="logo">
                 <img class="w-[70px] md:w-28" src="./assets/img/logo-light.svg" alt="this is logo ">
             </div>
@@ -71,105 +73,150 @@
             </div>
         </nav>
         <div
-            class="new_list overflow-auto  md:w-full max-w-[1700px] mx-auto py-[15px] px-[27px] font-semibold border-b-2 border-[#DBDBDB] text-xl">
-            <ul class="flex justify-between">
-                <li class="md:list-disc hover:text-blue-900"><a href="#">Isroil–Eron urushi</a></li>
-                <li class="md:list-disc hover:text-blue-900"><a href="#">Ukrainada tinchlik muzokaralari</a></li>
-                <li class="md:list-disc hover:text-blue-900"><a href="#">Trampning savdo urushi</a></li>
-                <li class="md:list-disc hover:text-blue-900"><a href="#">Rossiya-Ukraina urushi</a></li>
+            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-b-2 border-[#DBDBDB] text-xl md:overflow-visible overflow-x-auto">
+
+            <ul class="flex md:justify-between flex-row md:flex-row gap-4 md:gap-0 min-w-max md:min-w-0">
+                <li
+                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    <a href="#">Isroil–Eron urushi</a>
+                </li>
+                <li
+                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    <a href="#">Ukrainada tinchlik muzokaralari</a>
+                </li>
+                <li
+                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    <a href="#">Trampning savdo urushi</a>
+                </li>
+                <li
+                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    <a href="#">Rossiya-Ukraina urushi</a>
+                </li>
             </ul>
         </div>
+
+
     </header>
 
-    <main class="news grid grid-cols-12 grid-rows-12 gap-6 w-full max-w-[1700px] mx-auto mt-5">
-        <div class="news_big flex col-span-9 row-span-6  ">
+    <main
+        class="news grid w-[96%] md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
+
+        <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
+        <div class="news_big flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
             <div class="flex flex-col">
-                <h1 class="text-4xl font-bold mt-10 mb-8 hover:text-blue-900 cursor-pointer ">
+                <h1 class="text-xl mt-[-10px] md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
                     Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
                     hafta dayjesti
                 </h1>
-                <p class="text-xl">
-
-                            Toshkent bosqiniga 160 yil to‘ldi: o‘zbek tarixchilari bu mavzuni milliy rakursdan yoritishga, rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda. Pensiya yoshi oshirilishi mumkin: rasmiylar buni istisno qilmayapti. Prezident administratsiyasiga Saida Mirziyoyeva rahbar bo‘ldi, Komil Allamjonov 3-marta administratsiyada ish boshladi. Ortda qolayotgan hafta yangiliklari – Kun.uz dayjestida.
+                <p class="hidden md:block text-xl">
+                    Toshkent bosqiniga 160 yil to‘ldi: o‘zbek tarixchilari bu mavzuni milliy rakursdan yoritishga,
+                    rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda...
                 </p>
             </div>
-            <img class=" w-[700px] h-[500px] object-cover" src="	https://storage.kun.uz/source/thumbnails/_medium/11/zq62kKgPRGiQQ5QQB8WyrQ42YQjvxug7_medium.jpg" alt="This is news image ">
+            <img class="w-full md:w-[700px] h-[300px] md:h-[500px] object-cover"
+                src="https://storage.kun.uz/source/thumbnails/_medium/11/zq62kKgPRGiQQ5QQB8WyrQ42YQjvxug7_medium.jpg"
+                alt="This is news image">
         </div>
-        <div class="jahon col-span-3 col-start-10 row-span-12 bg-blue-200">4</div>
-        <div class="animative_news col-span-6 row-span-6 row-start-7 bg-green-200">5</div>
-        <div class="songi_news flex flex-col gap-3  col-span-3 col-start-7 row-span-6 row-start-7 min-h-[37rem]">
-            <div class="h-full bg-red-200 p-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-                facere soluta quibusdam nam error quam fugiat cupiditate, enim perspiciatis molestiae odio consectetur.
-                Porro vero animi odit error eveniet, accusantium illo sint fugit aut laboriosam perspiciatis architecto
-                autem iure quam quae laudantium ab itaque laborum a, tempora, hic provident nihil enim.</div>
-            <div class="h-full bg-green-200 p-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestiae id nostrum, ab laboriosam
-                ipsum corrupti? Repudiandae quisquam animi debitis illo, doloremque autem dolore in numquam officiis
-                sapiente, quis, deleniti eos aliquam. Deleniti illum cumque nobis fugiat enim tempora voluptate.
-            </div>
+
+        <!-- Jahon yangiliklari -->
+        <div class="jahon col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 bg-blue-200">
+            4
+        </div>
+
+        <!-- Animatsion yangiliklar -->
+        <div class="animative_news col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
+            5
+        </div>
+
+        <!-- So‘nggi yangiliklar -->
+        <div
+            class="songi_news flex flex-col gap-3 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
+            <div class="h-full bg-red-200 p-6">Lorem ipsum dolor sit amet consectetur...</div>
+            <div class="h-full bg-green-200 p-6">Lorem ipsum dolor sit amet consectetur...</div>
         </div>
     </main>
-    <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
+
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Dolzarb xabarlar</h1>
     </div>
 
-    <div class="dolzarb_news flex gap-5 w-full max-w-[1700px] mx-auto mt-5">
-        <div class="bg-blue-200 w-full h-[40rem]">1</div>
-        <div class="bg-blue-200 w-[60rem] h-[40rem]">2</div>
-        <div class="bg-blue-200 w-[60rem] h-[40rem]">3</div>
+
+    <div class="dolzarb_news w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 md:flex md:flex-row flex-col gap-5">
+        <div class="bg-blue-200 w-full h-[30rem] md:h-[40rem]">1</div>
+        <div class="bg-blue-200 w-full md:w-[60rem] h-[30rem] md:h-[40rem]">2</div>
+        <div class="bg-blue-200 w-full md:w-[60rem] h-[30rem] md:h-[40rem]">3</div>
     </div>
 
-    <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
+
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Video yangiliklar</h1>
     </div>
 
-    <div class="grid grid-cols-4 grid-rows-2 gap-2 w-full max-w-[1700px] mx-auto">
-        <div class="bg-blue-100 flex items-center justify-center h-[500px]">1</div>
-        <div class="bg-blue-200 flex items-center justify-center h-[500px]">2</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[500px]">3</div>
-        <div class="bg-blue-400 flex items-center justify-center h-[500px]">4</div>
-        <div class="bg-blue-500 flex items-center justify-center h-[500px]">5</div>
-        <div class="bg-blue-600 flex items-center justify-center h-[500px]">6</div>
-        <div class="bg-blue-700 flex items-center justify-center h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[500px]">8</div>
+
+    <div
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
+        <div class="bg-blue-100 flex items-center justify-center h-[300px] md:h-[500px]">1</div>
+        <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
+        <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
+        <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
+        <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
+        <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
+        <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
+        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
     </div>
-    <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
+
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Maqolalar</h1>
     </div>
 
-    <div class="grid grid-cols-4 grid-rows-2 gap-2 w-full max-w-[1700px] mx-auto">
-        <div class="bg-blue-100 flex items-center justify-center h-[500px]">1</div>
-        <div class="bg-blue-200 flex items-center justify-center h-[500px]">2</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[500px]">3</div>
-        <div class="bg-blue-400 flex items-center justify-center h-[500px]">4</div>
-        <div class="bg-blue-500 flex items-center justify-center h-[500px]">5</div>
-        <div class="bg-blue-600 flex items-center justify-center h-[500px]">6</div>
-        <div class="bg-blue-700 flex items-center justify-center h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[500px]">8</div>
+
+    <div
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
+        <div class="bg-blue-100 flex items-center justify-center h-[300px] md:h-[500px]">1</div>
+        <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
+        <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
+        <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
+        <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
+        <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
+        <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
+        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
     </div>
 
-    <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
-        <div class="flex justify-center items-center gap-5">
-            <img class="w-[100px] h-[100px] rounded-full" src="	https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg" alt="this is israil and eron wars">
-        <div class="flex flex-col">
-            <h1 class="text-4xl font-bold">
-            Isroil–Eron urushi (2025)</h1>
-            <p class="w-[900px] text-base">
-                2025 yil 13 iyunga o‘tar kechasi Isroil Eronning harbiy va yadroviy obektlariga zarbalar berishni boshladi. Bunga javoban Tehron Isroil ustidan bombalar yog‘dirdi. 12 kun davom etgan urush, AQShning Eron yadro obektlariga hujum qilishi bilan yakunlandi.
-            </p>
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
+        <div class="flex items-center gap-5">
+            <img class="hidden md:block w-[100px] h-[100px] rounded-full"
+                src="https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg"
+                alt="this is israil and eron wars">
+            <div class="flex flex-col">
+                <h1 class="text-2xl md:text-4xl font-bold">Isroil–Eron urushi (2025)</h1>
+                <p class="hidden md:block w-[900px] text-base">
+                    2025 yil 13 iyunga o‘tar kechasi Isroil Eronning harbiy va yadroviy obektlariga zarbalar berishni
+                    boshladi.
+                    Bunga javoban Tehron Isroil ustidan bombalar yog‘dirdi. 12 kun davom etgan urush, AQShning Eron
+                    yadro obektlariga
+                    hujum qilishi bilan yakunlandi.
+                </p>
+            </div>
         </div>
-        </div>
-    </div>
-    <div class="grid grid-cols-6 grid-rows-2 gap-2 w-full max-w-[1700px] mx-auto mt-5">
-        <div class="col-span-3 bg-blue-200 flex items-center justify-center h-[200px]">1</div>
-        <div class="col-start-4 col-span-3 bg-blue-300 flex items-center justify-center h-[200px]">2</div>
-        <div class="col-span-3 row-start-2 bg-blue-400 flex items-center justify-center h-[200px]">3</div>
-        <div class="col-start-4 col-span-3 row-start-2 bg-blue-500 flex items-center justify-center h-[200px]">4</div>
     </div>
 
-    <div class="dolzarb flex justify-between  w-full max-w-[1700px] mx-auto mt-10">
-        <h1 class="text-4xl font-bold">Intervyu</h1>
+    <div
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-2">
+        <div class="bg-blue-200 flex items-center justify-center h-[200px] col-span-1 md:col-span-3">1</div>
+        <div class="bg-blue-300 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:col-span-3">2
+        </div>
+        <div class="bg-blue-400 flex items-center justify-center h-[200px] col-span-1 md:row-start-2 md:col-span-3">3
+        </div>
+        <div
+            class="bg-blue-500 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:row-start-2 md:col-span-3">
+            4</div>
     </div>
+
+
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
+        <h1 class="md:text-4xl font-bold">Intervyu</h1>
+    </div>
+
 
     <div class="intervyu bg-[#232323] h-[30rem] mt-5">
         <swiper-container class="w-full h-full mySwiper w-full max-w-[1700px] mx-auto">
@@ -187,7 +234,8 @@
     </div>
 
 
-    <footer class="footer flex justify-between items-center w-full max-w-[1700px] mx-auto py-6 px-0 border-b-2 mt-10">
+    <footer
+        class="hidden md:footer flex justify-between items-center w-full max-w-[1700px] mx-auto py-6 px-0 border-b-2 mt-10">
         <img class="w-[100px]" src="./assets/img/logo-grey.svg" alt="this is footer logo grey">
         <div class="flex gap-5 text-xl  font-bold">
             <!-- 1-so‘z -->
@@ -237,7 +285,7 @@
     </footer>
 
 
-    <p class=" poragraph w-full max-w-[1700px] mx-auto mt-6 mb-12 text-gray-500">
+    <p class=" hidden md:poragraph w-full max-w-[1700px] mx-auto mt-6 mb-12 text-gray-500">
         “KUN.UZ” saytida eʼlon qilingan materiallardan nusxa koʻchirish, tarqatish va boshqa shakllarda foydalanish
         faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin. <br>
         Guvohnoma: №0987. Berilgan sanasi: 22.06.2015-yil. Muassis: “WEB EXPERT” MCHJ. Tahririyat manzili: 100043,
