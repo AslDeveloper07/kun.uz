@@ -421,3 +421,37 @@ li {
     left: 100%;
   }
 }
+
+
+/* Dark mode uchun style  */
+/* Theme Definitions */
+.theme-light {
+  background: linear-gradient(to bottom, #DBDBDB, #ffffff);
+  color: #000;
+}
+
+.theme-dark {
+  background-color: #1A1B1D !important;
+  color: #ffffff !important;
+}
+
+/* Force override any Tailwind bg classes on body */
+body.theme-dark {
+  background-image: none !important;
+  background-color: #1A1B1D !important;
+}
+
+/* Dark mode cards */
+.theme-dark .bg-blue-200,
+.theme-dark .bg-green-200,
+.theme-dark .bg-red-200,
+.theme-dark .bg-blue-100,
+.theme-dark .bg-blue-300,
+.theme-dark .bg-blue-400,
+.theme-dark .bg-blue-500,
+.theme-dark .bg-blue-600,
+.theme-dark .bg-blue-700,
+.theme-dark .bg-blue-800 {
+  background-color: #1E242D !important;
+  color: #ffffff !important;
+}
