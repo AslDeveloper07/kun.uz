@@ -15,12 +15,11 @@
     <header class="header m-0 md:mt-40">
         <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
             <div class="logo">
-            <img class="w-[70px] md:w-28" src="./assets/img/logo-light.svg" alt="this is logo ">
+            <img class="w-[70px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
             </div>
             <ul class="hidden md:flex gap-10 text-xl font-bold">
                 <li><a href="#">Oʻzbekiston</a></li>
                 <li><a href="#"></a>Jahon</li>
-                <li><a href="#"></a>Iqtisodiyot</li>
                 <li><a href="#"></a>Jamiyat</li>
                 <li><a href="#"></a>Sport</li>
                 <li><a href="#"></a>Fan-texnika</li>
@@ -39,30 +38,9 @@
                         <div class="menu-list">Arab</div>
                     </section>
                 </label>
-                <!-- From Uiverse.io by santosh-sarkar -->
-                <label for="switch" class="toggle ">
-                    <input type="checkbox" class="input" id="switch" />
-                    <div class="icon icon--moon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32"
-                            height="32">
-                            <path fill-rule="evenodd"
-                                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-
-                    <div class="icon icon--sun">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32"
-                            height="32">
-                            <path
-                                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
-                            </path>
-                        </svg>
-                    </div>
-                </label>
 
                 <!-- From Uiverse.io by Cevorob -->
-                <label class="burger hidden md:block" for="burger">
+                <label class="burger hidden md:block cursor-pointer z-50 relative" for="burger">
                     <input type="checkbox" id="burger">
                     <span></span>
                     <span></span>
@@ -71,23 +49,23 @@
             </div>
         </nav>
         <div
-            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-b-2 border-[#DBDBDB] text-xl md:overflow-visible overflow-x-auto">
+            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
 
             <ul class="flex md:justify-between flex-row md:flex-row gap-4 md:gap-0 min-w-max md:min-w-0">
                 <li
-                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    class="whitespace-nowrap text-base md:text-xl font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
                     <a href="#">Isroil–Eron urushi</a>
                 </li>
                 <li
-                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    class="whitespace-nowrap text-base md:text-xl font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
                     <a href="#">Ukrainada tinchlik muzokaralari</a>
                 </li>
                 <li
-                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    class="whitespace-nowrap text-base md:text-xl  font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
                     <a href="#">Trampning savdo urushi</a>
                 </li>
                 <li
-                    class="whitespace-nowrap text-base font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
+                    class="whitespace-nowrap text-base md:text-xl  font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
                     <a href="#">Rossiya-Ukraina urushi</a>
                 </li>
             </ul>
@@ -280,44 +258,38 @@
     <footer
         class="hidden footer md:flex justify-between items-center w-full max-w-[1700px] mx-auto py-6 px-0 border-b-2 mt-10">
         <img class="w-[100px]" src="./assets/img/logo-grey.svg" alt="this is footer logo grey">
-        <div class="flex gap-5 text-xl  font-bold">
-            <!-- 1-so‘z -->
-            <div class="relative overflow-hidden h-7 cursor-pointer group">
-                <span class="block group-hover:invisible">Sayt haqida</span>
-                <span
-                    class="absolute top-full left-0 opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:-translate-y-full text-blue-900">Sayt
-                    haqida</span>
-            </div>
+      <div class="flex gap-5 text-xl font-bold">
+  <!-- 1-so‘z -->
+  <div class="relative overflow-hidden h-7 cursor-pointer group">
+    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Sayt haqida</span>
+    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Sayt haqida</span>
+  </div>
 
-            <!-- 2-so‘z -->
-            <div class="relative overflow-hidden h-7 cursor-pointer group">
-                <span class="block group-hover:invisible">RSS</span>
-                <span
-                    class="absolute top-full left-0 opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:-translate-y-full text-blue-900">RSS</span>
-            </div>
+  <!-- 2-so‘z -->
+  <div class="relative overflow-hidden h-7 cursor-pointer group">
+    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">RSS</span>
+    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">RSS</span>
+  </div>
 
-            <!-- 3-so‘z -->
-            <div class="relative overflow-hidden h-7 cursor-pointer group">
-                <span class="block group-hover:invisible">Aloqa</span>
-                <span
-                    class="absolute top-full left-0 opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:-translate-y-full text-blue-900">Aloqa</span>
-            </div>
+  <!-- 3-so‘z -->
+  <div class="relative overflow-hidden h-7 cursor-pointer group">
+    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Aloqa</span>
+    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Aloqa</span>
+  </div>
 
-            <!-- 4-so‘z -->
-            <div class="relative overflow-hidden h-7 cursor-pointer group">
-                <span class="block group-hover:invisible">Reklama</span>
-                <span
-                    class="absolute top-full left-0 opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:-translate-y-full text-blue-900">Reklama</span>
-            </div>
+  <!-- 4-so‘z -->
+  <div class="relative overflow-hidden h-7 cursor-pointer group">
+    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Reklama</span>
+    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Reklama</span>
+  </div>
 
-            <!-- 5-so‘z -->
-            <div class="relative overflow-hidden h-7 cursor-pointer group">
-                <span class="block group-hover:invisible">Kun.uz jamoasi</span>
-                <span
-                    class="absolute top-full left-0 opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:-translate-y-full text-blue-900">Kun.uz
-                    jamoasi</span>
-            </div>
-        </div>
+  <!-- 5-so‘z -->
+  <div class="relative overflow-hidden h-7 cursor-pointer group">
+    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Kun.uz jamoasi</span>
+    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Kun.uz jamoasi</span>
+  </div>
+</div>
+
 
         <div class="foot_social flex items-center gap-5">
             <i class="ri-telegram-fill text-3xl hover:text-blue-900"></i>
@@ -342,52 +314,64 @@
 
 
 
-    <div id="mobile-menu" class="menu container hidden ">
-        <div class="menyu_link">
-            <div class="link_1">
-                <a href="#">-Videolavhalar</a>
-                <a href="#">-Fotolavhalar</a>
-                <a href="#">-Dolzarb xabarlar</a>
-                <a href="#">-Hayotiy hikoyalar</a>
+
+    <div id="mobile-menu"
+        class="hidden w-full max-w-[1700px] mx-auto absolute top-[240px] right-[100px] bg-[#e7e7e7] z-[10000000000] rounded-md h-[430px] flex flex-col justify-between">
+        <div class="flex flex-row gap-[60px] px-[50px] py-[80px] h-[300px] ">
+            <div class="flex flex-col">
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Videolavhalar</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Fotolavhalar</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Dolzarb xabarlar</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Hayotiy hikoyalar</a>
             </div>
-            <div class="link_2">
-                <a href="#">-Muharrir tanlovi</a>
-                <a href="#">-Maqolalar</a>
-                <a href="#">-Kun mavzulari</a>
-                <a href="#">-Bizning jamoa</a>
+            <div class="flex flex-col">
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Muharrir tanlovi</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Maqolalar</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Kun mavzulari</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Bizning jamoa</a>
             </div>
-            <div class="link_3">
-                <a href="#">
-                    Reklama tariflari
-                </a>
-                <a href="#">
-                    Media Kit
-                </a>
+            <div class="flex flex-col">
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">Reklama tariflari</a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">Media Kit</a>
             </div>
-            <div class="link_4">
-                <img src="./resources/images/diplom.png" alt="diplom">
+            <div class="flex flex-col m-2">
+                <img class="w-[25rem]" src="./assets/svg/business-bg-dark.png" alt="diplom" />
+            </div>
+            <div class="flex flex-col">
+                <p href="#" class="text-[22px] mt-[-30px] font-bold text-blue-900 m-2">Qoʻshimcha funksionalliklar</p>
+                <div class="flex justify-between items-center  mt-3 ml-3">
+                    <p class="text-xl font-semibold">
+                        Tungi koʻrish
+                    </p>
+                    <label class="ui-switch" for="switch">
+                        <input type="checkbox" id="switch" />
+                        <div class="slider">
+                            <div class="circle"></div>
+                        </div>
+                    </label>
+
+
+                </div>
             </div>
         </div>
-        <div class="region">
-            <ul>
-                <li><a href="#">Toshkent.sh</a></li>
-                <li><a href="#">Qoraqalpag'iston</a></li>
-                <li><a href="#">Andijon</a></li>
-                <li><a href="#">Farg'ona</a></li>
-                <li><a href="#">Namangan</a></li>
-                <li><a href="#">Qashqadaryo</a></li>
-                <li><a href="#">Samarqand</a></li>
-                <li><a href="#">Sirdaryo</a></li>
-                <li><a href="#">Buxoro</a></li>
-                <li><a href="#">Surxandaryo</a></li>
-                <li><a href="#">Jizzax</a></li>
-                <li><a href="#">Navoiy</a></li>
 
+        <div class="bg-[#FCFCFC] font-medium">
+            <ul class="flex justify-between font-semibold text-xl p-2 list-none flex-wrap text-black ">
+                <li class="my-[7px]"><a href="#">Toshkent.sh</a></li>
+                <li class="my-[7px]"><a href="#">Qoraqalpag'iston</a></li>
+                <li class="my-[7px]"><a href="#">Andijon</a></li>
+                <li class="my-[7px]"><a href="#">Farg'ona</a></li>
+                <li class="my-[7px]"><a href="#">Namangan</a></li>
+                <li class="my-[7px]"><a href="#">Qashqadaryo</a></li>
+                <li class="my-[7px]"><a href="#">Samarqand</a></li>
+                <li class="my-[7px]"><a href="#">Sirdaryo</a></li>
+                <li class="my-[7px]"><a href="#">Buxoro</a></li>
+                <li class="my-[7px]"><a href="#">Surxandaryo</a></li>
+                <li class="my-[7px]"><a href="#">Jizzax</a></li>
+                <li class="my-[7px]"><a href="#">Navoiy</a></li>
             </ul>
         </div>
     </div>
-
-
 
 
     <div
@@ -475,13 +459,8 @@
         </a>
     </div>
 
-
-    <script>
-
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <!-- <script type="module" src="./index.js"></script> -->
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
