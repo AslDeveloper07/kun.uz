@@ -3,8 +3,8 @@ module.exports = {
    content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      boxShadow: {
-        'custom-green': '7px 8px 0px 2px rgba(13, 73, 0, 0.75)',
+       backgroundImage: {
+        'custom-gradient': 'linear-gradient(182deg, rgba(235,234,234,0.932) 0%, rgba(255,255,255,1) 100%)',
       },
     },
   },

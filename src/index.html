@@ -11,11 +11,11 @@
 
 </head>
 
-<body class="md:min-h-screen light-theme bg-gradient-to-b from-[#DBDBDB] to-[#ffffff]">
+<body class="md:min-h-screen light-theme bg-custom-gradient min-h-screen">
     <header class="header m-0 md:mt-40">
-        <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
+        <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg pt-[8px] pb-[8px] md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
             <div class="logo">
-            <img class="w-[70px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
+            <img class="w-[90px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
             </div>
             <ul class="hidden md:flex gap-10 text-xl font-bold">
                 <li><a href="#">Oʻzbekiston</a></li>
@@ -49,7 +49,7 @@
             </div>
         </nav>
         <div
-            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
+            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-none md:border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
 
             <ul class="flex md:justify-between flex-row md:flex-row gap-4 md:gap-0 min-w-max md:min-w-0">
                 <li
@@ -75,10 +75,10 @@
     </header>
 
     <main
-        class="news grid w-[96%] md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
+        class="news grid  md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
 
         <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
-        <div class="news_big flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
+        <div class="news_big w-[96%] md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
             <div class="flex flex-col ">
                 <h1
                     class="text-3sm mt-[-10px] mb-[10px] md:mb-2 md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
@@ -96,7 +96,7 @@
         </div>
 
         <!-- Jahon yangiliklari -->
-        <div class="jahon col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 ">
+        <div class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 ">
             <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
             <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
                 <p class=" text-md line-clamp-2 md:text-[18px] md:leading-7">
@@ -118,13 +118,13 @@
         </div>
 
         <!-- Animatsion yangiliklar -->
-        <div class="animative_news col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
+        <div class="animative_news w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
             5
         </div>
 
         <!-- So‘nggi yangiliklar -->
         <div
-            class="songi_news  flex flex-col gap-5 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
+            class="songi_news  flex flex-col gap-1 md:gap-5 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
 
             <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
     transition-all duration-300 ease-in-out
@@ -223,9 +223,9 @@
     <div
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
         <div
-            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-[300px] md:h-[580px]">
+            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
             <img src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
-            <h1 class="text-[27px] font-bold p-5 mt-1">
+            <h1 class="text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
                 «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
             </h1>
         </div>
@@ -246,9 +246,9 @@
     <div
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
         <div
-            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-[300px] md:h-[580px]">
+            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
             <img src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
-            <h1 class="text-[27px] font-bold p-5 mt-1">
+            <h1 class="text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
                 «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
             </h1>
         </div>
@@ -296,15 +296,15 @@
 
     <div
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-2">
-        <div class=" flex  justify-start gap-5 h-fit col-span-1 md:col-span-3 border-b border-[#303030] pb-5">
-            <img class="flex items-start object-cover w-[450px] h-[170px] " src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg"
+        <div class=" flex  justify-start gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-[#303030] pb-2 md:pb-5">
+            <img class="flex items-start object-cover md:w-[450px] h-[70px] md:h-[170px] " src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg"
                 alt="this is foto">
             <div class="flex flex-col gap-1 ">
-                <p class="text-[16px] font-bold text-gray-500">21:11 | 28.09.2025 </p>
-                <h3 class="text-[23px] font-bold">
+                <p class="text-[11px] md:text-[16px] font-bold text-gray-500">21:11 | 28.09.2025 </p>
+                <h3 class="text-sm md:text-[23px] font-bold leading-2 md:leading-8">
                     Eron XAEA bosh direktorini yadro inshootlariga kiritmaydigan bo‘ldi
                 </h3>
-                <p>
+                <p class="hidden md:block">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, ab.
 
                 </p>

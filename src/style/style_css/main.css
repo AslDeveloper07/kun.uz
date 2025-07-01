@@ -9,6 +9,13 @@ li {
   @apply hover:text-blue-900 cursor-pointer;
 }
 
+body{
+    background: linear-gradient(
+      182deg,
+      rgba(235, 234, 234, 0.932) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+}
 /* Uiverse dark toggleswitch style */
 /* switch settings 👇 */
 
