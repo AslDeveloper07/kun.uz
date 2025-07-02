@@ -1,10 +1,10 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/src/index.html" }
+    { "source": "/", "destination": "/dist/index.html" }
   ],
   "builds": [
     {
-      "src": "src/index.html",
+      "src": "dist/index.html",
       "use": "@vercel/static"
     }
   ]
