@@ -38,7 +38,7 @@
                     </section>
                 </label>
 
-                <button onclick="openModal()" id="languageBtn"
+                <button id="languageBtn"
                     class="flex text-white block md:hidden">
                     <p id="language">
                         Oʻzbekcha
@@ -809,86 +809,37 @@
 
 
 
-
-
-  <!-- OVERLAY va MODAL -->
+ <!-- OVERLAY -->
   <div
     id="overlay"
     class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
-    onclick="closeModal()"
   ></div>
-<div
-  id="languageModal"
-  class="fixed bottom-[-300px] left-0 right-0 z-50 bg-white transition-all duration-500 ease-in-out md:hidden rounded-t-xl shadow-xl hidden"
->
-  <div class="p-6">
-    <h2 class="text-xl font-bold mb-4 text-gray-900">Tilni tanlang:</h2>
-    <div class="flex flex-col gap-3">
-      <label class="flex items-center gap-3">
-        <input
-          type="radio"
-          name="language"
-          value="O‘zbek"
-          class="form-radio accent-gray-500 w-5 h-5"
-        />
-        <span class="text-base text-gray-900 font-medium">O‘zbek</span>
-      </label>
-      <label class="flex items-center gap-3">
-        <input
-          type="radio"
-          name="language"
-          value="Rus"
-          class="form-radio accent-gray-500 w-5 h-5"
-        />
-        <span class="text-base text-gray-900 font-medium">Rus</span>
-      </label>
-      <label class="flex items-center gap-3">
-        <input
-          type="radio"
-          name="language"
-          value="Ingliz"
-          class="form-radio accent-gray-500 w-5 h-5"
-        />
-        <span class="text-base text-gray-900 font-medium">Ingliz</span>
-      </label>
+
+  <!-- MODAL -->
+  <div
+    id="languageModal"
+    class="fixed bottom-[-300px] left-0 right-0 z-50 bg-white transition-all duration-500 ease-in-out md:hidden rounded-t-xl shadow-xl hidden"
+  >
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-4 text-gray-900">Tilni tanlang:</h2>
+      <div class="flex flex-col gap-3">
+        <label class="flex items-center gap-3">
+          <input type="radio" name="language" value="O‘zbek" class="form-radio accent-gray-500 w-5 h-5" />
+          <span class="text-base text-gray-900 font-medium">O‘zbek</span>
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="radio" name="language" value="Rus" class="form-radio accent-gray-500 w-5 h-5" />
+          <span class="text-base text-gray-900 font-medium">Rus</span>
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="radio" name="language" value="Ingliz" class="form-radio accent-gray-500 w-5 h-5" />
+          <span class="text-base text-gray-900 font-medium">Ingliz</span>
+        </label>
+      </div>
     </div>
   </div>
-</div>
 
 
-
-  <script>
-    const overlay = document.getElementById("overlay");
-    const modal = document.getElementById("languageModal");
-    const button = document.getElementById("languageBtn");
-
-    function openModal() {
-      overlay.classList.remove("hidden");
-      modal.classList.remove("hidden");
-      setTimeout(() => {
-        modal.classList.remove("bottom-[-300px]");
-        modal.classList.add("bottom-0");
-      }, 50);
-    }
-
-    function closeModal() {
-      modal.classList.remove("bottom-0");
-      modal.classList.add("bottom-[-300px]");
-      setTimeout(() => {
-        overlay.classList.add("hidden");
-        modal.classList.add("hidden");
-      }, 500);
-    }
-
-    // Radio tanlanganda button textini yangilash
-    document.querySelectorAll('input[name="language"]').forEach(radio => {
-      radio.addEventListener("change", (e) => {
-        const til = e.target.value;
-        button.textContent = til;
-        closeModal();
-      });
-    });
-  </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
