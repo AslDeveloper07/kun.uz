@@ -1,6 +1,6 @@
 import { API_key, BASE_url } from "./config.js";
 
-// 🧱 Reusable card yaratish funksiyasi
+// Card yaratish
 function createGridCard({ title, urlToImage, description, publishedAt }) {
   const wrapper = document.createElement("div");
   wrapper.className =
@@ -50,7 +50,7 @@ export async function renderGridNews(containerId) {
 
   try {
     const response = await fetch(
-      `${BASE_url}/top-headlines?country=us&pageSize=6`, // ⬅️ 1 ta yangilik qo‘shildi
+      `${BASE_url}/top-headlines?country=us&pageSize=8`, // 1 ta yangilik qo‘shildi
       {
         headers: {
           "X-Api-Key": API_key,
@@ -61,7 +61,7 @@ export async function renderGridNews(containerId) {
     if (!response.ok) throw new Error("API javobida xatolik bor.");
 
     const data = await response.json();
-    const articles = data.articles?.slice(0, 6); // ⬅️ 5 ta yangilikni olib chiqamiz
+    const articles = data.articles?.slice(0, 8); // 5 ta yangilikni olib chiqamiz
 
     if (!articles || articles.length === 0) {
       container.innerHTML = `<p class="text-red-500 text-center">Yangilik topilmadi</p>`;
