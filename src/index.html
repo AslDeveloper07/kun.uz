@@ -12,88 +12,180 @@
 </head>
 
 <body class="md:min-h-screen  bg-custom-gradient min-h-screen dark">
+    <!-- Header -->
     <header class="header m-0 md:mt-40">
-        <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg pt-[8px] pb-[8px] md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
+        <!-- Navbar -->
+        <nav
+            class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg pt-[8px] pb-[8px] md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6">
+            <!-- Logo -->
             <div class="logo">
-            <img class="w-[90px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
+
+                <img class="w-[90px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
+
             </div>
+            <!-- Nav Link -->
             <ul id="nav_link" class="hidden md:flex gap-10 text-xl font-bold">
-                <li><a href="#" data-category="general">Oʻzbekiston</a></li>
-                <li><a href="#" data-category="public"></a>Jahon</li>
-                <li><a href="#" data-category="world"></a>Jamiyat</li>
-                <li><a href="#" data-category="sport"></a>Sport</li>
-                <li><a href="#" data-category="texnalogy"></a>Fan-texnika</li>
-                <li><a href="#" data-category="read"></a>Nuqtai nazar</li>
-                <li><a href="#" data-category="listen"></a>Audio</li>
+
+                <li>
+                    <a href="#" data-category="general">
+                        Oʻzbekiston
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="public">
+                        Jahon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="world">
+                        Jamiyat
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="sport">
+                        Sport
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="texnalogy">
+                        Fan-texnika
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="read">
+                        Nuqtai nazar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-category="listen">
+                        Audio
+                    </a>
+                </li>
+
             </ul>
+            <!-- Menu Language function components -->
             <div class="function flex items-center justify-center gap-6">
+
                 <!-- language toggle start -->
                 <label class="main hidden md:flex">
-                    <p class="text-lg font-medium">Uzbekcha</p>
+
+                    <p class="text-lg font-medium">
+                        Uzbekcha
+                    </p>
+
                     <input class="inp" checked="" type="checkbox" />
+
                     <section class="menu-container">
-                        <div class="menu-list">English</div>
-                        <div class="menu-list">Rus</div>
-                        <div class="menu-list">Arab</div>
+
+                        <div class="menu-list">
+                            English
+                        </div>
+
+                        <div class="menu-list">
+                            Rus
+                        </div>
+
+                        <div class="menu-list">
+                            Arab
+                        </div>
+
                     </section>
+
                 </label>
 
-                <button id="languageBtn"
-                    class="flex text-white block md:hidden">
+                <!-- Button div Mobile -->
+                <button id="languageBtn" class="flex text-white block md:hidden">
+
                     <p id="language">
                         Oʻzbekcha
                     </p>
+
                     <i class="ri-arrow-down-s-fill text-lg "></i>
+
                 </button>
 
 
-                <!-- From Uiverse.io by Cevorob -->
+                <!-- Burger UIVERSE style components -->
                 <label class="burger hidden md:block cursor-pointer z-50 relative" for="burger">
+
                     <input type="checkbox" id="burger">
+
                     <span></span>
+
                     <span></span>
+
                     <span></span>
+
                 </label>
+
             </div>
+
         </nav>
+        <!-- Navbar bottom news links -->
         <div
             class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-none md:border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
 
             <ul class="flex md:justify-between flex-row md:flex-row gap-4 md:gap-0 min-w-max md:min-w-0">
-                <li
-                    class="whitespace-nowrap text-base md:text-xl font-semibold border rounded-full border-blue-900 px-4 py-1
+
+                <li class="whitespace-nowrap text-base md:text-xl font-semibold border rounded-full border-blue-900 px-4 py-1
                     hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
-                    <a href="#">Isroil–Eron urushi</a>
+                    <a href="#">
+                        Isroil–Eron urushi
+                    </a>
                 </li>
+
                 <li
                     class="whitespace-nowrap text-base md:text-xl font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
-                    <a href="#">Ukrainada tinchlik muzokaralari</a>
+
+                    <a href="#">
+                        Ukrainada tinchlik muzokaralari
+                    </a>
+
                 </li>
+
                 <li
                     class="whitespace-nowrap text-base md:text-xl  font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
-                    <a href="#">Trampning savdo urushi</a>
+                    <a href="#">
+                        Trampning savdo urushi
+                    </a>
                 </li>
+
                 <li
                     class="whitespace-nowrap text-base md:text-xl  font-semibold border rounded-full border-blue-900 px-4 py-1 hover:text-blue-900 md:border-none md:rounded-none md:px-0 md:py-0 md:list-disc">
-                    <a href="#">Rossiya-Ukraina urushi</a>
+
+                    <a href="#">
+                        Rossiya-Ukraina urushi
+                    </a>
+
                 </li>
+
             </ul>
+
         </div>
 
 
     </header>
 
+    <!-- Grid secrion -->
     <main class="news grid  md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
 
-        <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
         <div
             class="news_big w-[96%] gap-2 md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6 h-fit">
+            <!-- Asosiy kurinadigan yangilik -->
             <div class="flex flex-col h-fit ">
+
                 <h1
                     class="text-3sm mt-[-10px] mb-[10px] md:mb-2 md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
                     Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
                     hafta dayjesti
                 </h1>
+
                 <p class="hidden md:block text-xl">
                     Toshkent bosqiniga 160 yil to‘ldi: o‘zbek tarixchilari bu mavzuni milliy rakursdan yoritishga,
                     rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda. Rossiya bosqiniga 160
@@ -103,43 +195,27 @@
                     voluptates illum velit, porro, molestias magnam commodi quia cupiditate minima quis nam similique
                     modi praesentium ullam excepturi.
                 </p>
+
             </div>
+
             <img class="w-full md:w-[700px] h-[300px] md:h-[500px] object-cover"
                 src="https://storage.kun.uz/source/thumbnails/_medium/11/zq62kKgPRGiQQ5QQB8WyrQ42YQjvxug7_medium.jpg"
                 alt="This is news image">
+
         </div>
 
-        <!-- Jahon yangiliklari
-        <div class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 ">
-            <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
-            <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
-                <p class=" text-md line-clamp-2 md:text-[18px] md:leading-7">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque quo explicabo iure ipsum
-                    adipisci laudantium architecto laboriosam velit hic?
-                </p>
-                <span
-                    class="flex text-sm font-normal md:font-samibold md:text-md text-blue-500 md:text-md mt-2 justify-end md:justify-start">Reklama</span>
-            </div>
-            <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
-                <p class=" text-md line-clamp-2 md:text-[18px] md:leading-7">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque quo explicabo iure ipsum
-                    adipisci laudantium architecto laboriosam velit hic?
-                </p>
-                <span class="text-gray-500 font-semibold mt-2">Oʻzbeksiton | 12:23</span>
-
-            </div>
-
-        </div> -->
-
-
+        <!-- bu yerga textlardan iborat bulgan oʻng tarafdagi news section yozilgan  -->
         <div id="jahon"
             class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12">
-            <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
-            <!-- JS orqali cardlar shu yerga qo‘shiladi -->
+
+            <h3 class="text-xl md:text-3xl font-bold mb-2">
+                Soʻngi yangiliklar
+            </h3>
+            <!-- Java scriptda qilingan kodlar yoziladi -->
         </div>
 
 
-        <!-- Animatsion yangiliklar -->
+        <!-- Feyk quldan qilingan Data  -->
         <div
             class=" w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 ">
             <div
@@ -222,7 +298,7 @@
             </div>
         </div>
 
-        <!-- So‘nggi yangiliklar -->
+        <!-- Animatsion card uchun  -->
         <div
             class="songi_news  flex flex-col gap-1 md:gap-5 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
 
@@ -234,7 +310,9 @@
                 <div class="flex justify-start items-center gap-1  mb-[3px]">
 
                     <i class="ri-play-circle-fill text-1xl text-blue-900"></i>
-                    <p>Jamiyat</p>
+                    <p>
+                        Jamiyat
+                    </p>
 
                 </div>
 
@@ -255,19 +333,24 @@
             <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md px-4 md:px-6 p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
-                <div class="flex justify-start items-center gap-1  mb-[3px]"><i
-                        class="ri-play-circle-fill text-1xl text-blue-900"></i>
+                <div class="flex justify-start items-center gap-1  mb-[3px]">
+
+                    <i class="ri-play-circle-fill text-1xl text-blue-900"></i>
+
                     <p>Jamiyat</p>
                 </div>
+
                 <h5 class="text-2xl font-semibold  leading-7">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h5>
+
                 <p class="text-md mt-2">
                     Modi ipsum velit, sint unde laudantium odiosed nihil dolorum aperiam,ab, beatae voluptatum illo sit
                     cupiditate eaque mollitia!Ipsum harum fugit
                     iure suscipit debitis odio obcaecati deleniti rem? Obcaecati perferendis, unde corrupti laudantium
                     libero, ex tempore, quidem maxime vitae voluptates ratione?
                 </p>
+
             </div>
 
             <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md px-4 md:px-6 p-6 rounded-none
@@ -294,23 +377,27 @@
 
     </main>
 
+    <!-- Dolzarb section title -->
     <div
         class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-3 mb-1 md:mb-0 md:mt-10 md:flex justify-between">
         <h1 class="text-xl md:text-4xl font-bold">Dolzarb xabarlar</h1>
     </div>
 
-
+    <!-- Dolzarb fake Data  -->
     <div class="dolzarb_news w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 md:flex md:flex-row flex-col gap-5">
         <div class=" w-full h-[30rem] h-fit mb-4 md:mb-0 md:h-fit">
             <img class="object-cover w-[auto] md:w-[50rem] h-fit md:h-[35rem] mb-4" src="./assets/img/harvard.jpg"
                 alt="">
+
             <span class="text-sm  md:text-md font-medium md:font-bold text-gray-500 ">
                 Oʻzbekiston | 21:10 | 07.01.2025
             </span>
+
             <h2 class="text-sm leading-1 md:text-3xl font-bold mt-1 hover:text-blue-900">
                 “IELTS’dan 9 ball, SAT’dan 1600 ball” - Jons Hopkinsdan 380 ming dollarlik grant yutgan Boburjon
                 Baxtiyorov hikoyasi
             </h2>
+
             <p class="hidden md:block text-sm line-clamp-4  md:text-xl mt-1 md:mt-3">
                 Boburjon Samarqand viloyatidan, u hozirda 20 yoshda. Oilasidagilar grin-karta yutgani ortidan 10
                 yoshligida AQShga ko‘chib o‘tgan. O‘z ustida tinimsiz ishlagan Boburjon IELTS’dan 9, SAT imtihonidan esa
@@ -323,37 +410,49 @@
 
             <div
                 class="flex flex-row-reverse md:flex-col-reverse   justify-between gap-4 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+
                 <div class="flex flex-col items-start ">
+
                     <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
                         19:20 | 07.06.2025
                     </p>
+
                     <h3 class="text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
                         Tramp Eron oliy rahbarini «sharmandali o‘limdan» qutqarganini aytdi
                     </h3>
+
                 </div>
+
                 <img class="flex items-start object-cover w-[76%] md:w-[450px] h-[80px] md:h-auto rounded-lg md:rounded-none"
                     src="./assets/img/tramp.jpg" alt="">
+
             </div>
 
 
             <div class="hidden md:block">
+
                 <p class="text-[11px] md:text-[14px] font-bold text-gray-500 mt-4 ">
                     Jahon | 19:20 | 07.06.2025
                 </p>
+
                 <h3
                     class=" border-b border-[#303030] pb-4 text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
                     Tramp va Musk yana bahslashib qolishdi
                 </h3>
+
             </div>
 
             <div class=" hidden md:block h-fit border-b border-[#303030] pb-3">
+
                 <p class="text-[11px] md:text-[14px] font-bold text-gray-500 mt-4 ">
                     Jahon | 19:20 | 07.06.2025
                 </p>
+
                 <h3 class="h-fit  pb-4 text-sm md:text-[20px]  font-bold leading-2 md:leading-7 ">
                     Tramp Suriyaga qarshi sanksiyalarni bekor qiluvchi farmonni imzoladi. Qanday yengilliklar
                     berilmoqda?
                 </h3>
+
                 <p class="hidden md:block">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi necessitatibus nobis tempora
                     molestiae a dicta quos sequi! Odio quisquam beatae adipisci? Illo aspernatur tempore, consequatur
@@ -361,17 +460,23 @@
                     itaque. perspiciatis quas quod sed ipsam officia tenetur itaque. perspiciatis quas quod sed ipsam
                     officia tenetur itaque.
                 </p>
+
             </div>
+
         </div>
 
 
         <div class="flex flex-col  w-full md:w-[60rem] h-[12rem] md:h-[40rem] gap-5">
+
             <div
                 class="flex flex-row-reverse md:flex-col-reverse   justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+
                 <div class="flex flex-col items-start ">
+
                     <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
                         19:20 | 07.06.2025
                     </p>
+
                     <h3 class="text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
                         Abbos Arag‘chi: Eron AQSh bilan muzokaralarga tayyor
                     </h3>
@@ -382,6 +487,7 @@
 
             <div
                 class="flex flex-row-reverse md:flex-col-reverse    justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+
                 <div class="flex flex-col items-start ">
                     <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
                         19:20 | 07.06.2025
@@ -399,7 +505,13 @@
 
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-3 md:mt-10 md:flex justify-between">
-        <h1 class="text-2xl md:text-4xl font-bold">Video yangiliklar</h1>
+
+        <!-- Video yangiliklar section titlesi -->
+        <h1 class="text-2xl md:text-4xl font-bold">
+            Video yangiliklar
+        </h1>
+
+        <!-- Animation button -->
         <button class="btn hidden md:block">
             <div class="btn-inner">
                 <div class="hover-bg"></div>
@@ -413,25 +525,15 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-text">Hamkorlik qilish</div>
+
+
+            <div class="btn-text">
+                Hamkorlik qilish
+            </div>
+
         </button>
 
     </div>
-
-    <!--
-<div id="loader" class="hidden text-center text-lg my-5">Yuklanmoqda...</div>
-
-    <div id="renderCard"
-        class=" grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
-        <div id=""
-            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
-            <img class="news-image" src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
-            <h1 class="news-title text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
-                «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
-            </h1>
-        </div>
-    </div>
- -->
 
 
     <!-- Loader -->
@@ -449,45 +551,29 @@
         <div
             class="flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center h-fit md:h-[580px] shadow-md">
             <img class="news-image w-full h-[250px] object-cover" src="" alt="">
+
             <h1
                 class="news-title leading-8 mb-3 md:mb-0 text-[18px] md:text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1 ">
             </h1>
+
         </div>
+
     </template>
-
-    <!--
-    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <h1 class="text-4xl font-bold">Maqolalar</h1>
-    </div> -->
-
-
-    <!-- <div
-        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
-        <div
-            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
-            <img src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
-            <h1 class="text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
-                «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
-            </h1>
-        </div>
-        <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
-        <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
-        <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
-        <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
-        <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
-    </div> -->
 
 
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
         <div class="flex justify-between items-center gap-5">
+
             <img class="hidden md:block w-[100px] h-[100px] rounded-full"
                 src="https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg"
                 alt="this is israil and eron wars">
+
             <div class="flex flex-col">
-                <h1 class="text-xl md:text-4xl font-bold">Isroil–Eron urushi (2025)</h1>
+
+                <h1 class="text-xl md:text-4xl font-bold">
+                    Isroil–Eron urushi (2025)
+                </h1>
                 <p class="hidden md:block w-[900px] text-base">
                     2025 yil 13 iyunga o‘tar kechasi Isroil Eronning harbiy va yadroviy obektlariga zarbalar berishni
                     boshladi.
@@ -497,7 +583,10 @@
                 </p>
             </div>
         </div>
+
+        <!-- Animation button -->
         <button class="btn hidden md:block">
+
             <div class="btn-inner">
                 <div class="hover-bg"></div>
                 <div class="btn-icon">
@@ -510,36 +599,53 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-text">Hamkorlik qilish</div>
+
+            <div class="btn-text">
+                Hamkorlik qilish
+            </div>
+
         </button>
     </div>
 
+    <!-- Container grid uchun  -->
     <div id="gridNewsContainer"
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-9">
-
+        <!-- Cardlar uchun container buni ichiga Java Scriptda cardlar Api bogʻlab chiqiladi  -->
     </div>
 
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <h1 class="text-xl md:text-4xl font-bold">Intervyu</h1>
+
+        <!-- Intervyu section title -->
+        <h1 class="text-xl md:text-4xl font-bold">
+            Intervyu
+        </h1>
+
     </div>
 
-
+    <!-- Swipper.js slider section  -->
     <div class="intervyu bg-[#232323] h-[30rem] mt-5">
+
         <swiper-container class="w-full h-full mySwiper w-full max-w-[1700px] mx-auto">
+
             <swiper-slide class="flex justify-center items-center  text-center text-[18px] bg-[#f4f] text-white">
                 Slide 1
             </swiper-slide>
+
             <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#4894ff] text-white">
                 Slide 2
             </swiper-slide>
+
             <swiper-slide class="flex justify-center items-center text-center text-[18px] bg-[#48e762e4] text-white">
                 Slide 3
             </swiper-slide>
 
         </swiper-container>
+
     </div>
 
+
+    <!-- Kun uz elonler qismi titlesi -->
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
         <div class="flex justify-between items-center gap-5">
             <img class="hidden md:block w-[100px] h-[100px] rounded-full" src="./assets/svg/business-icon.svg"
@@ -578,60 +684,83 @@
 
             <!-- Matn -->
             <div class="p-4 md:p-6">
+
                 <p class="text-lg md:text-3xl font-bold leading-snug">
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
                 </p>
+
             </div>
+
         </div>
 
     </div>
-
+    <!-- Footer -->
     <footer
         class="hidden footer md:flex justify-between items-center w-full max-w-[1700px] mx-auto py-6 px-0 border-b-2 mt-10">
         <img class="w-[100px]" src="./assets/img/logo-grey.svg" alt="this is footer logo grey">
         <div class="flex gap-5 text-xl font-bold">
+
             <!-- 1-so‘z -->
             <div class="relative overflow-hidden h-7 cursor-pointer group">
+
+                <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">
+                    Sayt haqida
+                </span>
                 <span
-                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Sayt
-                    haqida</span>
-                <span
-                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Sayt
-                    haqida</span>
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">
+                    Sayt haqida
+                </span>
+
             </div>
 
             <!-- 2-so‘z -->
             <div class="relative overflow-hidden h-7 cursor-pointer group">
+
+                <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">
+                    RSS
+                </span>
+
                 <span
-                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">RSS</span>
-                <span
-                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">RSS</span>
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">
+                    RSS
+                </span>
+
             </div>
 
             <!-- 3-so‘z -->
             <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">
+                    Aloqa
+                </span>
                 <span
-                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Aloqa</span>
-                <span
-                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Aloqa</span>
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">
+                    Aloqa
+                </span>
             </div>
 
             <!-- 4-so‘z -->
             <div class="relative overflow-hidden h-7 cursor-pointer group">
+
+                <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">
+                    Reklama
+                </span>
                 <span
-                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Reklama</span>
-                <span
-                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Reklama</span>
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">
+                    Reklama
+                </span>
             </div>
 
             <!-- 5-so‘z -->
             <div class="relative overflow-hidden h-7 cursor-pointer group">
+
+                <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">
+                    Kun.uz jamoasi
+                </span>
+
                 <span
-                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Kun.uz
-                    jamoasi</span>
-                <span
-                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Kun.uz
-                    jamoasi</span>
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">
+                    Kun.uz jamoasi
+                </span>
             </div>
         </div>
 
@@ -644,7 +773,7 @@
         </div>
     </footer>
 
-
+    <!-- Footer poragraph -->
     <p class=" hidden md:block poragraph w-full max-w-[1700px] mx-auto mt-6 mb-12 text-gray-500">
         “KUN.UZ” saytida eʼlon qilingan materiallardan nusxa koʻchirish, tarqatish va boshqa shakllarda foydalanish
         faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin. <br>
@@ -659,49 +788,96 @@
 
 
 
-
+    <!-- Burger icon bosilgadna chiqadigan sideber -->
     <div id="mobile-menu"
         class="hidden w-full max-w-[1700px] mx-auto absolute top-[240px] right-[100px] bg-[#e7e7e7] z-[10000000000] rounded-md h-[430px] flex flex-col justify-between">
+
         <div class="flex flex-row gap-[60px] px-[50px] py-[80px] h-[300px] ">
+
             <div class="flex flex-col">
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Videolavhalar</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Fotolavhalar</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Dolzarb xabarlar</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Hayotiy hikoyalar</a>
+
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Videolavhalar
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Fotolavhalar
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Dolzarb xabarlar
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Hayotiy hikoyalar
+                </a>
             </div>
+
             <div class="flex flex-col">
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Muharrir tanlovi</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Maqolalar</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Kun mavzulari</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">-Bizning jamoa</a>
+
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Muharrir tanlovi
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Maqolalar
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Kun mavzulari
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    -Bizning jamoa
+                </a>
             </div>
+
             <div class="flex flex-col">
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">Reklama tariflari</a>
-                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">Media Kit</a>
+
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    Reklama tariflari
+                </a>
+                <a href="#" class="text-[25px] font-bold text-blue-900 m-2">
+                    Media Kit
+                </a>
+
             </div>
+
             <div class="flex flex-col m-2">
+
                 <img class="w-[25rem]" src="./assets/svg/business-bg-dark.png" alt="diplom" />
+
             </div>
+
             <div class="flex flex-col">
+
                 <p href="#" class="text-[22px] mt-[-30px] font-bold text-blue-900 m-2">Qoʻshimcha funksionalliklar</p>
+
                 <div class="flex justify-between items-center  mt-3 ml-3">
+
                     <p class="text-xl font-semibold">
                         Tungi koʻrish
                     </p>
+
+                    <!-- Dark mode switch toggle -->
+
                     <label class="ui-switch" for="switch">
+
                         <input type="checkbox" id="switch" />
+
                         <div class="slider">
+
                             <div class="circle"></div>
+
                         </div>
+
                     </label>
 
-
                 </div>
+
             </div>
+
         </div>
 
+        <!-- Media city name is news -->
         <div class="bg-[#FCFCFC] font-medium">
+
             <ul class="flex justify-between font-semibold text-xl p-2 list-none flex-wrap text-black ">
+
                 <li class="my-[7px]"><a href="#">Toshkent.sh</a></li>
                 <li class="my-[7px]"><a href="#">Qoraqalpag'iston</a></li>
                 <li class="my-[7px]"><a href="#">Andijon</a></li>
@@ -714,135 +890,212 @@
                 <li class="my-[7px]"><a href="#">Surxandaryo</a></li>
                 <li class="my-[7px]"><a href="#">Jizzax</a></li>
                 <li class="my-[7px]"><a href="#">Navoiy</a></li>
+
             </ul>
+
         </div>
+
     </div>
 
-
+    <!-- Mobile menyu uchun -->
     <div
         class="flex  md:hidden menu fixed bottom-0 left-0 w-full z-50 flex justify-between items-center p-2 bg-white rounded-none shadow-[0_10px_25px_rgba(0,0,0,0.075)]">
+
         <a href="#"
             class="relative z-[1] overflow-hidden w-[70px] h-[50px] flex justify-center items-center rounded-lg transition-all duration-200 ease-in group">
+
             <svg width="22" height="22" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+
                 <path
                     d="M14.865 4.39925L10.305 1.20883C9.06211 0.338 7.15419 0.3855 5.95877 1.31175L1.99252 4.40717C1.20086 5.02467 0.575439 6.29133 0.575439 7.28883V12.7513C0.575439 14.7701 2.21419 16.4167 4.23294 16.4167H12.7671C14.7859 16.4167 16.4246 14.778 16.4246 12.7592V7.39175C16.4246 6.323 15.7359 5.00883 14.865 4.39925ZM9.09377 13.2501C9.09377 13.5747 8.82461 13.8438 8.50002 13.8438C8.17544 13.8438 7.90627 13.5747 7.90627 13.2501V10.8751C7.90627 10.5505 8.17544 10.2813 8.50002 10.2813C8.82461 10.2813 9.09377 10.5505 9.09377 10.8751V13.2501Z"
                     fill="#9CA4AB"></path>
+
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
+
                     <stop stop-color="#0F40A0" offset=""></stop>
+
                     <stop offset="0%" stop-color="red" />
 
+
                 </linearGradient>
+
             </svg>
+
             <span class="hidden"></span>
 
         </a>
+
         <a href="#"
             class="relative z-[1] overflow-hidden w-[70px] h-[50px] flex justify-center items-center rounded-lg transition-all duration-200 ease-in group">
+
             <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+
                 <path
                     d="M8.99996 0.666504C4.39996 0.666504 0.666626 4.39984 0.666626 8.99984C0.666626 13.5998 4.39996 17.3332 8.99996 17.3332C13.6 17.3332 17.3333 13.5998 17.3333 8.99984C17.3333 4.39984 13.6 0.666504 8.99996 0.666504ZM11.9416 10.0248L7.62496 13.0165C6.99163 13.4582 6.62496 13.1998 6.80829 12.4582L7.59996 9.25817L6.22496 8.9165C5.59996 8.7665 5.52496 8.33317 6.04996 7.9665L10.3666 4.97484C11 4.53317 11.3666 4.7915 11.1833 5.53317L10.3916 8.73317L11.7666 9.07484C12.3916 9.23317 12.4666 9.65817 11.9416 10.0248Z"
                     fill="#9CA4AB"></path>
+
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
+
                     <stop stop-color="#0F40A0" offset=""></stop>
+
                     <stop offset="0%" stop-color="red" />
 
                 </linearGradient>
+
             </svg>
+
             <span class="hidden"></span>
 
         </a>
+
+
         <a href="#"
             class="relative z-[1] overflow-hidden w-[70px] h-[50px] flex justify-center items-center rounded-lg transition-all duration-200 ease-in group">
+
             <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9.00002 17.3332C13.6024 17.3332 17.3334 13.6022 17.3334 8.99984C17.3334 4.39746 13.6024 0.666504 9.00002 0.666504C4.39765 0.666504 0.666687 4.39746 0.666687 8.99984C0.666687 13.6022 4.39765 17.3332 9.00002 17.3332ZM7.77502 5.63012C7.21998 5.28322 6.50002 5.68225 6.50002 6.33678V11.663C6.50002 12.3176 7.21998 12.7166 7.77502 12.3697L12.036 9.70657C12.5582 9.38018 12.5582 8.61963 12.036 8.29324L7.77502 5.63012Z"
                     fill="#9CA4AB"></path>
+
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
+
                     <stop stop-color="#0F40A0" offset=""></stop>
+
                     <stop offset="0%" stop-color="red" />
 
                 </linearGradient>
+
             </svg>
+
             <span class="hidden"></span>
 
+
         </a>
+
         <a href="#"
             class="relative z-[1] overflow-hidden w-[70px] h-[50px] flex justify-center items-center rounded-lg transition-all duration-200 ease-in group">
+
             <svg width="24" height="24" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M0.452635 4.90131C0 5.74813 0 6.86681 0 9.10417C0 11.3415 0 12.4602 0.452635 13.307C0.81003 13.9757 1.35767 14.5233 2.02631 14.8807C2.87313 15.3333 3.99181 15.3333 6.22917 15.3333H12.9375C15.1749 15.3333 16.2935 15.3333 17.1404 14.8807C17.809 14.5233 18.3566 13.9757 18.714 13.307C19.1667 12.4602 19.1667 11.3415 19.1667 9.10417C19.1667 6.86681 19.1667 5.74813 18.714 4.90131C18.3566 4.23267 17.809 3.68503 17.1404 3.32764C16.2935 2.875 15.1749 2.875 12.9375 2.875H6.22917C3.99181 2.875 2.87313 2.875 2.02631 3.32764C1.35767 3.68503 0.81003 4.23267 0.452635 4.90131ZM14.8543 11.9791C15.3836 11.9791 15.8127 11.55 15.8127 11.0208C15.8127 10.4915 15.3836 10.0624 14.8543 10.0624C14.3251 10.0624 13.896 10.4915 13.896 11.0208C13.896 11.55 14.3251 11.9791 14.8543 11.9791ZM15.8127 7.18734C15.8127 7.71661 15.3836 8.14567 14.8543 8.14567C14.3251 8.14567 13.896 7.71661 13.896 7.18734C13.896 6.65806 14.3251 6.229 14.8543 6.229C15.3836 6.229 15.8127 6.65806 15.8127 7.18734ZM6.22941 11.979C7.81723 11.979 9.10441 10.6918 9.10441 9.104C9.10441 7.51619 7.81723 6.229 6.22941 6.229C4.6416 6.229 3.35441 7.51619 3.35441 9.104C3.35441 10.6918 4.6416 11.979 6.22941 11.979Z"
                     fill="#9CA4AB"></path>
+
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.7231 1.29379C17.0407 1.05562 17.105 0.605106 16.8668 0.287542C16.6287 -0.0300214 16.1782 -0.0943805 15.8606 0.143792L12.9856 2.30004C12.9469 2.32907 12.912 2.36125 12.8809 2.39596H15.2535L16.7231 1.29379Z"
                     fill="#9CA4AB"></path>
+
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.30629 0.143792C2.98873 -0.0943805 2.53822 -0.0300214 2.30004 0.287542C2.06187 0.605106 2.12623 1.05562 2.44379 1.29379L3.91301 2.39571H6.2858C6.25477 2.36109 6.2199 2.329 6.18129 2.30004L3.30629 0.143792Z"
                     fill="#9CA4AB"></path>
+
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
+
                     <stop stop-color="#0F40A0" offset=""></stop>
+
                     <stop offset="0%" stop-color="red" />
 
                 </linearGradient>
+
             </svg>
+
             <span class="hidden"></span>
 
+
         </a>
+
         <a href="#"
             class="relative z-[1] overflow-hidden w-[70px] h-[50px] flex justify-center items-center rounded-lg transition-all duration-200 ease-in group">
+
             <svg width="22" height="22" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3.94836 2.45316e-07C3.29579 2.45316e-07 2.66406 0.0673943 2.08107 0.134444C1.21851 0.233642 0.529062 0.921437 0.433097 1.78709C0.368661 2.36834 0.305498 2.99529 0.305498 3.64286C0.305498 4.29042 0.368661 4.91737 0.433097 5.49862C0.529062 6.36428 1.21852 7.05207 2.08107 7.15127C2.66406 7.21832 3.29579 7.28571 3.94836 7.28571C4.60092 7.28571 5.23266 7.21832 5.81565 7.15127C6.67819 7.05207 7.36765 6.36428 7.46362 5.49862C7.52805 4.91737 7.59122 4.29042 7.59122 3.64286C7.59122 2.99529 7.52805 2.36834 7.46362 1.78709C7.36765 0.921437 6.67819 0.233642 5.81565 0.134444C5.23266 0.0673943 4.60092 2.45316e-07 3.94836 2.45316e-07ZM13.4883 0.217525C13.3743 0.0811923 13.2061 0.00170145 13.0284 2.69525e-05C12.8507 -0.00164633 12.681 0.0746643 12.5645 0.208823C11.0949 1.89937 10.0225 3.1361 9.1872 4.83168C8.5908 6.04233 9.56595 7.28571 10.7863 7.28571H15.2184C16.4573 7.28571 17.4284 6.01102 16.8068 4.79864C15.9887 3.20332 14.9901 2.01088 13.6776 0.443626V0.443618V0.443604L13.4883 0.217525ZM9.20883 9.71251C9.20883 9.29336 9.54861 8.95358 9.96776 8.95358H16.0391C16.4583 8.95358 16.7981 9.29336 16.7981 9.71251C16.7981 10.1316 16.4583 10.4714 16.0391 10.4714H9.96776C9.54861 10.4714 9.20883 10.1316 9.20883 9.71251ZM9.20883 15.7839C9.20883 15.3648 9.54861 15.025 9.96776 15.025H16.0391C16.4583 15.025 16.7981 15.3648 16.7981 15.7839C16.7981 16.2031 16.4583 16.5428 16.0391 16.5428H9.96776C9.54861 16.5428 9.20883 16.2031 9.20883 15.7839ZM9.96776 11.9892C9.54861 11.9892 9.20883 12.3291 9.20883 12.7482C9.20883 13.1673 9.54861 13.5071 9.96776 13.5071H16.0391C16.4583 13.5071 16.7981 13.1673 16.7981 12.7482C16.7981 12.3291 16.4583 11.9892 16.0391 11.9892H9.96776ZM3.94832 8.80001C1.76772 8.80001 0 10.5677 0 12.7483C0 14.9289 1.76772 16.6967 3.94832 16.6967C6.12892 16.6967 7.89666 14.9289 7.89666 12.7483C7.89666 10.5677 6.12892 8.80001 3.94832 8.80001Z"
                     fill="#9CA4AB"></path>
+
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
+
                     <stop stop-color="#0F40A0" offset=""></stop>
+
                     <stop offset="0%" stop-color="red" />
 
+
                 </linearGradient>
+
             </svg>
+
             <span class="hidden"></span>
+
         </a>
+
     </div>
 
-<!-- OVERLAY -->
-<div
-  id="overlay"
-  class="fixed inset-0 bg-black/50 dark:bg-black/70 z-40 hidden transition-colors duration-300"
-></div>
-
-<!-- MODAL -->
-<div
-  id="languageModal"
-  class="fixed bottom-[-300px] left-0 right-0 z-50 bg-white dark:bg-[#1E1E1E] transition-all duration-500 ease-in-out md:hidden rounded-t-xl shadow-xl hidden"
->
-  <div class="p-6">
-    <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Tilni tanlang:</h2>
-    <div class="flex flex-col gap-3">
-      <label class="flex items-center gap-3">
-        <input type="radio" name="language" value="O‘zbek"
-          class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
-        <span class="text-base text-gray-900 dark:text-white font-medium">O‘zbek</span>
-      </label>
-      <label class="flex items-center gap-3">
-        <input type="radio" name="language" value="Rus"
-          class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
-        <span class="text-base text-gray-900 dark:text-white font-medium">Rus</span>
-      </label>
-      <label class="flex items-center gap-3">
-        <input type="radio" name="language" value="Ingliz"
-          class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
-        <span class="text-base text-gray-900 dark:text-white font-medium">Ingliz</span>
-      </label>
+    <div id="overlay" class="fixed inset-0 bg-black/50 dark:bg-black/70 z-40 hidden transition-colors duration-300">
+        <!-- OVERLAY -->
     </div>
-  </div>
-</div>
+
+    <!-- MODAL -->
+
+    <div id="languageModal"
+        class="fixed bottom-[-300px] left-0 right-0 z-50 bg-white dark:bg-[#1E1E1E] transition-all duration-500 ease-in-out md:hidden rounded-t-xl shadow-xl hidden">
+
+        <div class="p-6">
+
+            <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+                Tilni tanlang:
+            </h2>
+
+            <div class="flex flex-col gap-3">
+
+                <label class="flex items-center gap-3">
+
+                    <input type="radio" name="language" value="O‘zbek"
+                        class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
+
+                    <span class="text-base text-gray-900 dark:text-white font-medium">
+                        O‘zbek
+                    </span>
+
+                </label>
+
+                <label class="flex items-center gap-3">
+
+                    <input type="radio" name="language" value="Rus"
+                        class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
+
+                    <span class="text-base text-gray-900 dark:text-white font-medium">
+                        Rus
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3">
+
+                    <input type="radio" name="language" value="Ingliz"
+                        class="form-radio accent-gray-500 dark:accent-blue-500 w-5 h-5 transition-all duration-200" />
+
+                    <span class="text-base text-gray-900 dark:text-white font-medium">
+                        Ingliz
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
+
 </body>
 
 </html>
