@@ -11,20 +11,20 @@
 
 <script defer src="bundle.js"></script></head>
 
-<body class="md:min-h-screen light-theme bg-gradient-to-b from-[#DBDBDB] to-[#ffffff]">
+<body class="md:min-h-screen light-theme bg-custom-gradient min-h-screen">
     <header class="header m-0 md:mt-40">
-        <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
+        <nav class="navbar flex items-center justify-between bg-white w-full max-w-[1700px] mx-auto rounded-none md:rounded-lg pt-[8px] pb-[8px] md:pt-3 md:pb-3 pl-3 pr-3 md:pl-6 md:pr-6"
             <div class="logo">
-            <img class="w-[70px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
+            <img class="w-[90px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
             </div>
-            <ul class="hidden md:flex gap-10 text-xl font-bold">
-                <li><a href="#">Oʻzbekiston</a></li>
-                <li><a href="#"></a>Jahon</li>
-                <li><a href="#"></a>Jamiyat</li>
-                <li><a href="#"></a>Sport</li>
-                <li><a href="#"></a>Fan-texnika</li>
-                <li><a href="#"></a>Nuqtai nazar</li>
-                <li><a href="#"></a>Audio</li>
+            <ul id="nav_link" class="hidden md:flex gap-10 text-xl font-bold">
+                <li><a href="#" data-category="general">Oʻzbekiston</a></li>
+                <li><a href="#" data-category="public"></a>Jahon</li>
+                <li><a href="#" data-category="world"></a>Jamiyat</li>
+                <li><a href="#" data-category="sport"></a>Sport</li>
+                <li><a href="#" data-category="texnalogy"></a>Fan-texnika</li>
+                <li><a href="#" data-category="read"></a>Nuqtai nazar</li>
+                <li><a href="#" data-category="listen"></a>Audio</li>
             </ul>
             <div class="function flex items-center justify-center gap-6">
                 <!-- language toggle start -->
@@ -49,7 +49,7 @@
             </div>
         </nav>
         <div
-            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
+            class="new_list py-[10px] px-[10px] md:w-full max-w-[1700px] mx-auto md:py-[15px] md:px-[27px] font-semibold border-none md:border-b-2 border-[#0d111723] text-xl md:overflow-visible overflow-x-auto">
 
             <ul class="flex md:justify-between flex-row md:flex-row gap-4 md:gap-0 min-w-max md:min-w-0">
                 <li
@@ -74,13 +74,14 @@
 
     </header>
 
-    <main
-        class="news grid w-[96%] md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
+    <main class="news grid  md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
 
         <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
-        <div class="news_big flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
-            <div class="flex flex-col ">
-                <h1 class="text-xl mt-[-10px] md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
+        <div
+            class="news_big w-[96%] md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6 h-fit">
+            <div class="flex flex-col h-fit">
+                <h1
+                    class="text-3sm mt-[-10px] mb-[10px] md:mb-2 md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
                     Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
                     hafta dayjesti
                 </h1>
@@ -94,36 +95,112 @@
                 alt="This is news image">
         </div>
 
-        <!-- Jahon yangiliklari -->
-        <div class="jahon col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 bg-blue-200">
-            4
+        <!-- Jahon yangiliklari
+        <div class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 ">
+            <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
+            <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
+                <p class=" text-md line-clamp-2 md:text-[18px] md:leading-7">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque quo explicabo iure ipsum
+                    adipisci laudantium architecto laboriosam velit hic?
+                </p>
+                <span
+                    class="flex text-sm font-normal md:font-samibold md:text-md text-blue-500 md:text-md mt-2 justify-end md:justify-start">Reklama</span>
+            </div>
+            <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
+                <p class=" text-md line-clamp-2 md:text-[18px] md:leading-7">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos cumque quo explicabo iure ipsum
+                    adipisci laudantium architecto laboriosam velit hic?
+                </p>
+                <span class="text-gray-500 font-semibold mt-2">Oʻzbeksiton | 12:23</span>
+
+            </div>
+
+        </div> -->
+
+
+        <div id="jahon"
+            class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12">
+            <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
+            <!-- JS orqali cardlar shu yerga qo‘shiladi -->
         </div>
 
+
         <!-- Animatsion yangiliklar -->
-        <div class="animative_news col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
+        <div
+            class="animative_news  w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
             5
         </div>
 
         <!-- So‘nggi yangiliklar -->
         <div
-            class="songi_news flex flex-col gap-7 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem] ">
+            class="songi_news  flex flex-col gap-1 md:gap-5 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
 
-
-
-            <div class="relative left-0 md:left-[-8px] h-[20rem] bg-red-200 w-full max-w-md p-6 rounded-none
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
+
+
+                <div class="flex justify-start items-center gap-1  mb-[3px]">
+
+                    <i class="ri-play-circle-fill text-1xl text-blue-900"></i>
+                    <p>Jamiyat</p>
+
+                </div>
+
+                <h5 class="text-2xl font-semibold  leading-7">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+
+                <p class="text-md mt-2">
+                    Modi ipsum velit, sint unde laudantium odiosed nihil dolorum aperiam,ab, beatae voluptatum illo sit
+                    cupiditate eaque mollitia!Ipsum harum fugit
+                    iure suscipit debitis odio obcaecati deleniti rem? Obcaecati perferendis, unde corrupti laudantium
+                    libero, ex tempore, quidem maxime vitae voluptates ratione?
+                </p>
+
             </div>
 
 
-            <div class="relative left-0 md:left-[-8px] h-[20rem] bg-red-200 w-full max-w-md p-6 rounded-none
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
+                <div class="flex justify-start items-center gap-1  mb-[3px]"><i
+                        class="ri-play-circle-fill text-1xl text-blue-900"></i>
+                    <p>Jamiyat</p>
+                </div>
+                <h5 class="text-2xl font-semibold  leading-7">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="text-md mt-2">
+                    Modi ipsum velit, sint unde laudantium odiosed nihil dolorum aperiam,ab, beatae voluptatum illo sit
+                    cupiditate eaque mollitia!Ipsum harum fugit
+                    iure suscipit debitis odio obcaecati deleniti rem? Obcaecati perferendis, unde corrupti laudantium
+                    libero, ex tempore, quidem maxime vitae voluptates ratione?
+                </p>
             </div>
 
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
+    transition-all duration-300 ease-in-out
+    md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
+                <div class="flex justify-start items-center gap-1  mb-[3px]"><i
+                        class="ri-play-circle-fill text-1xl text-blue-900"></i>
+                    <p>Jamiyat</p>
+                </div>
+                <h5 class="text-2xl font-semibold  leading-7">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h5>
+                <p class="text-md mt-2">
+                    Modi ipsum velit, sint unde laudantium odiosed nihil dolorum aperiam,ab, beatae voluptatum illo sit
+                    cupiditate eaque mollitia!Ipsum harum fugit
+                    iure suscipit debitis odio obcaecati deleniti rem? Obcaecati perferendis, unde corrupti laudantium
+                    libero, ex tempore, quidem maxime vitae voluptates ratione?
+                </p>
+            </div>
 
 
         </div>
+
+
     </main>
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
@@ -140,7 +217,7 @@
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Video yangiliklar</h1>
-        <button class="btn">
+        <button class="btn hidden md:block">
             <div class="btn-inner">
                 <div class="hover-bg"></div>
                 <div class="btn-icon">
@@ -158,27 +235,58 @@
 
     </div>
 
+    <!--
+<div id="loader" class="hidden text-center text-lg my-5">Yuklanmoqda...</div>
 
-    <div
-        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
-        <div class="bg-blue-100 flex items-center justify-center h-[300px] md:h-[500px]">1</div>
-        <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
-        <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
-        <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
-        <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
-        <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
+    <div id="renderCard"
+        class=" grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
+        <div id=""
+            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
+            <img class="news-image" src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
+            <h1 class="news-title text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
+                «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
+            </h1>
+        </div>
+    </div>
+ -->
+
+
+    <!-- Loader -->
+    <div id="loader" class="hidden text-center text-lg my-5 text-blue-600 font-semibold">
+        Yuklanmoqda...
     </div>
 
+    <!-- Yangiliklar chiqadigan joy -->
+    <div id="renderCard"
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 gap-1 md:gap-8">
+    </div>
+
+    <!-- Card template -->
+    <template id="cards">
+        <div
+            class="flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center h-fit md:h-[580px] shadow-md">
+            <img class="news-image w-full h-[250px] object-cover" src="" alt="">
+            <h1
+                class="news-title leading-8 mb-3 md:mb-0 text-[18px] md:text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1 ">
+            </h1>
+        </div>
+    </template>
+
+    <!--
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Maqolalar</h1>
-    </div>
+    </div> -->
 
 
-    <div
+    <!-- <div
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
-        <div class="bg-blue-100 flex items-center justify-center h-[300px] md:h-[500px]">1</div>
+        <div
+            class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
+            <img src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
+            <h1 class="text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
+                «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
+            </h1>
+        </div>
         <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
         <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
         <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
@@ -186,7 +294,9 @@
         <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
         <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
         <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
-    </div>
+    </div> -->
+
+
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
         <div class="flex justify-between items-center gap-5">
@@ -204,7 +314,7 @@
                 </p>
             </div>
         </div>
-        <button class="btn">
+        <button class="btn hidden md:block">
             <div class="btn-inner">
                 <div class="hover-bg"></div>
                 <div class="btn-icon">
@@ -221,16 +331,9 @@
         </button>
     </div>
 
-    <div
-        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-2">
-        <div class="bg-blue-200 flex items-center justify-center h-[200px] col-span-1 md:col-span-3">1</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:col-span-3">2
-        </div>
-        <div class="bg-blue-400 flex items-center justify-center h-[200px] col-span-1 md:row-start-2 md:col-span-3">3
-        </div>
-        <div
-            class="bg-blue-500 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:row-start-2 md:col-span-3">
-            4</div>
+    <div id="gridNewsContainer"
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-9">
+
     </div>
 
 
@@ -254,41 +357,100 @@
         </swiper-container>
     </div>
 
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
+        <div class="flex justify-between items-center gap-5">
+            <img class="hidden md:block w-[100px] h-[100px] rounded-full" src="./assets/svg/business-icon.svg"
+                alt="this is israil and eron wars">
+            <div class="flex flex-col">
+                <h1 class="text-2xl md:text-4xl font-bold">Eʻlonlar</h1>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="block-news"
+        class="hidden md:flex grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-5">
+        <div class="group bg-[#26304D] flex items-start justify-start h-[230px] col-span-1 md:col-span-3
+         hover:bg-blue-900 text-white transition-colors duration-300 overflow-hidden shadow-md">
+
+            <!-- Rasm -->
+            <img class="w-[350px] h-full object-cover transition-transform duration-300 "
+                src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="this is image ">
+
+            <!-- Matn -->
+            <div class="p-4 md:p-6">
+                <p class="text-lg md:text-3xl font-bold leading-snug">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+            </div>
+        </div>
+
+       <div class="group bg-[#26304D] flex items-start justify-start h-[230px] col-span-1 md:col-span-3
+         hover:bg-blue-900 text-white transition-colors duration-300 overflow-hidden shadow-md">
+
+            <!-- Rasm -->
+            <img class="w-[350px] h-full object-cover transition-transform duration-300 "
+                src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="this is image ">
+
+            <!-- Matn -->
+            <div class="p-4 md:p-6">
+                <p class="text-lg md:text-3xl font-bold leading-snug">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+            </div>
+        </div>
+
+    </div>
 
     <footer
         class="hidden footer md:flex justify-between items-center w-full max-w-[1700px] mx-auto py-6 px-0 border-b-2 mt-10">
         <img class="w-[100px]" src="./assets/img/logo-grey.svg" alt="this is footer logo grey">
-      <div class="flex gap-5 text-xl font-bold">
-  <!-- 1-so‘z -->
-  <div class="relative overflow-hidden h-7 cursor-pointer group">
-    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Sayt haqida</span>
-    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Sayt haqida</span>
-  </div>
+        <div class="flex gap-5 text-xl font-bold">
+            <!-- 1-so‘z -->
+            <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span
+                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Sayt
+                    haqida</span>
+                <span
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Sayt
+                    haqida</span>
+            </div>
 
-  <!-- 2-so‘z -->
-  <div class="relative overflow-hidden h-7 cursor-pointer group">
-    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">RSS</span>
-    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">RSS</span>
-  </div>
+            <!-- 2-so‘z -->
+            <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span
+                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">RSS</span>
+                <span
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">RSS</span>
+            </div>
 
-  <!-- 3-so‘z -->
-  <div class="relative overflow-hidden h-7 cursor-pointer group">
-    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Aloqa</span>
-    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Aloqa</span>
-  </div>
+            <!-- 3-so‘z -->
+            <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span
+                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Aloqa</span>
+                <span
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Aloqa</span>
+            </div>
 
-  <!-- 4-so‘z -->
-  <div class="relative overflow-hidden h-7 cursor-pointer group">
-    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Reklama</span>
-    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Reklama</span>
-  </div>
+            <!-- 4-so‘z -->
+            <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span
+                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Reklama</span>
+                <span
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Reklama</span>
+            </div>
 
-  <!-- 5-so‘z -->
-  <div class="relative overflow-hidden h-7 cursor-pointer group">
-    <span class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Kun.uz jamoasi</span>
-    <span class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Kun.uz jamoasi</span>
-  </div>
-</div>
+            <!-- 5-so‘z -->
+            <div class="relative overflow-hidden h-7 cursor-pointer group">
+                <span
+                    class="block transition-transform duration-200 ease-in-out group-hover:-translate-y-7 text-black">Kun.uz
+                    jamoasi</span>
+                <span
+                    class="absolute top-0 left-0 transition-transform duration-200 ease-in-out translate-y-7 group-hover:translate-y-0 text-blue-900">Kun.uz
+                    jamoasi</span>
+            </div>
+        </div>
 
 
         <div class="foot_social flex items-center gap-5">
@@ -385,7 +547,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -400,7 +563,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -415,7 +579,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -436,7 +601,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -451,7 +617,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
