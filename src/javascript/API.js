@@ -12,7 +12,7 @@ function showError(message) {
 function createDivider() {
   const divider = document.createElement("div");
   divider.className =
-    "dolzarb col-span-full w-full mt-10 md:flex justify-between";
+    "dolzarb col-span-full w-full mt-0 md:flex justify-between";
 
   const h1 = document.createElement("h1");
   h1.className = "text-4xl font-bold";
