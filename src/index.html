@@ -28,9 +28,8 @@
             </ul>
             <div class="function flex items-center justify-center gap-6">
                 <!-- language toggle start -->
-                <label class="main">
-                    <i class="ri-global-line"></i>
-                    Uzbek
+                <label class="main hidden md:flex">
+                    <p class="text-lg font-medium">Uzbekcha</p>
                     <input class="inp" checked="" type="checkbox" />
                     <section class="menu-container">
                         <div class="menu-list">English</div>
@@ -38,6 +37,15 @@
                         <div class="menu-list">Arab</div>
                     </section>
                 </label>
+
+                <button onclick="openModal()" id="languageBtn"
+                    class="flex text-white block md:hidden">
+                    <p id="language">
+                        Oʻzbekcha
+                    </p>
+                    <i class="ri-arrow-down-s-fill text-lg "></i>
+                </button>
+
 
                 <!-- From Uiverse.io by Cevorob -->
                 <label class="burger hidden md:block cursor-pointer z-50 relative" for="burger">
@@ -78,8 +86,8 @@
 
         <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
         <div
-            class="news_big w-[96%] md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6 h-fit">
-            <div class="flex flex-col h-fit">
+            class="news_big w-[96%] gap-2 md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6 h-fit">
+            <div class="flex flex-col h-fit ">
                 <h1
                     class="text-3sm mt-[-10px] mb-[10px] md:mb-2 md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
                     Rossiya bosqiniga 160 yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
@@ -87,7 +95,12 @@
                 </h1>
                 <p class="hidden md:block text-xl">
                     Toshkent bosqiniga 160 yil to‘ldi: o‘zbek tarixchilari bu mavzuni milliy rakursdan yoritishga,
-                    rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda...
+                    rossiyalik vazir esa MDHdagi tarix darsliklarini o‘zgartirishga urinmoqda. Rossiya bosqiniga 160
+                    yil, pensiya yoshini oshirish taklifi va administratsiyada o‘zgarishlar -
+                    hafta dayjesti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta consequatur
+                    inventore nostrum voluptatibus maiores suscipit ad minus, perferendis dolore. Sunt dolorem nihil
+                    voluptates illum velit, porro, molestias magnam commodi quia cupiditate minima quis nam similique
+                    modi praesentium ullam excepturi.
                 </p>
             </div>
             <img class="w-full md:w-[700px] h-[300px] md:h-[500px] object-cover"
@@ -127,15 +140,92 @@
 
         <!-- Animatsion yangiliklar -->
         <div
-            class="animative_news  w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
-            5
+            class=" w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 ">
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030]  pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Нима учун Кореяни танлаш ёки танламаслик керак? | SUBYEKTIV
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover md:w-[450px] h-[70px] md:h-[140px]  rounded-lg md:rounded-none"
+                    src="./assets/img/image1.jpg" alt="">
+            </div>
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030]  pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Jonim Qonim beshlik: Qozoqiston, Oʻzbekiston, Qirgʻiziston, Tojikis...
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover md:w-[450px] h-[70px] md:h-[140px] rounded-lg md:rounded-none"
+                    src="./assets/img/image2.jpg" alt="">
+            </div>
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Rassiya binolaridan biriga dron hujum qildi. Bu dron Ukraina tomon...
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover md:w-[450px] h-[70px] md:h-[140px] rounded-lg md:rounded-none"
+                    src="./assets/img/image3.jpg" alt="">
+            </div>
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Amerikada vahshiyona lager: ushlangan migrantlarni timsohlar qo‘r...
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[60%] md:w-[450px] h-[70px] md:h-[140px] rounded-lg md:rounded-none"
+                    src="./assets/img/image4.jpg" alt="">
+            </div>
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Oʻzbekiston Jahon chempionatiga chiqdi. 35 yillik oʻrzu roʻyobga chiqdi
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[60%] md:w-[450px] h-[70px] md:h-[140px] rounded-lg md:rounded-none"
+                    src="./assets/img/image5.jpg" alt="">
+            </div>
+            <div
+                class="flex justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030]  pb-1 md:pb-3 pt-1 md:pt-3">
+                <div class="flex flex-col items-start">
+                    <p class="text-[11px] md:text-[16px] font-bold text-gray-500">
+                        Jamiyat
+                    </p>
+                    <h3 class="text-sm md:text-[30px] font-bold leading-2 md:leading-10 line-clamp-2">
+                        Tramp Eron oliy rahbarini «sharmandali o‘limdan» qutqarganini aytdi
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[60%] md:w-[450px] h-[70px] md:h-[140px] rounded-lg md:rounded-none"
+                    src="./assets/img/tank.jpg" alt="">
+            </div>
         </div>
 
         <!-- So‘nggi yangiliklar -->
         <div
             class="songi_news  flex flex-col gap-1 md:gap-5 col-span-1 md:col-span-3 md:col-start-7 row-span-1 md:row-span-6 md:row-start-7 min-h-[37rem]">
 
-            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md px-4 md:px-6 p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
 
@@ -161,7 +251,7 @@
             </div>
 
 
-            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md px-4 md:px-6 p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
                 <div class="flex justify-start items-center gap-1  mb-[3px]"><i
@@ -179,7 +269,7 @@
                 </p>
             </div>
 
-            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md p-6 rounded-none
+            <div class="relative left-0 md:left-[-8px] h-fit bg-red-200 w-full max-w-md px-4 md:px-6 p-6 rounded-none
     transition-all duration-300 ease-in-out
     md:hover:shadow-[10px_10px_0_#000] md:hover:scale-105">
                 <div class="flex justify-start items-center gap-1  mb-[3px]"><i
@@ -203,20 +293,112 @@
 
     </main>
 
-    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <h1 class="text-4xl font-bold">Dolzarb xabarlar</h1>
+    <div
+        class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-3 mb-1 md:mb-0 md:mt-10 md:flex justify-between">
+        <h1 class="text-xl md:text-4xl font-bold">Dolzarb xabarlar</h1>
     </div>
 
 
     <div class="dolzarb_news w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 md:flex md:flex-row flex-col gap-5">
-        <div class="bg-blue-200 w-full h-[30rem] md:h-[40rem]">1</div>
-        <div class="bg-blue-200 w-full md:w-[60rem] h-[30rem] md:h-[40rem]">2</div>
-        <div class="bg-blue-200 w-full md:w-[60rem] h-[30rem] md:h-[40rem]">3</div>
+        <div class=" w-full h-[30rem] h-fit mb-4 md:mb-0 md:h-fit">
+            <img class="object-cover w-[auto] md:w-[50rem] h-fit md:h-[35rem] mb-4" src="./assets/img/harvard.jpg"
+                alt="">
+            <span class="text-sm  md:text-md font-medium md:font-bold text-gray-500 ">
+                Oʻzbekiston | 21:10 | 07.01.2025
+            </span>
+            <h2 class="text-sm leading-1 md:text-3xl font-bold mt-1 hover:text-blue-900">
+                “IELTS’dan 9 ball, SAT’dan 1600 ball” - Jons Hopkinsdan 380 ming dollarlik grant yutgan Boburjon
+                Baxtiyorov hikoyasi
+            </h2>
+            <p class="hidden md:block text-sm line-clamp-4  md:text-xl mt-1 md:mt-3">
+                Boburjon Samarqand viloyatidan, u hozirda 20 yoshda. Oilasidagilar grin-karta yutgani ortidan 10
+                yoshligida AQShga ko‘chib o‘tgan. O‘z ustida tinimsiz ishlagan Boburjon IELTS’dan 9, SAT imtihonidan esa
+                maksimal 1600 ballni qo‘lga kiritgan.
+            </p>
+        </div>
+
+
+        <div class=" w-full md:w-[60rem] h-[6rem] md:h-[51rem] pb-1 md:pb-3 pt-1 md:pt-0 pl-0 md:pl-3 pr-0 md:pr-3">
+
+            <div
+                class="flex flex-row-reverse md:flex-col-reverse   justify-between gap-4 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+                <div class="flex flex-col items-start ">
+                    <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
+                        19:20 | 07.06.2025
+                    </p>
+                    <h3 class="text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
+                        Tramp Eron oliy rahbarini «sharmandali o‘limdan» qutqarganini aytdi
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[76%] md:w-[450px] h-[80px] md:h-auto rounded-lg md:rounded-none"
+                    src="./assets/img/tramp.jpg" alt="">
+            </div>
+
+
+            <div class="hidden md:block">
+                <p class="text-[11px] md:text-[14px] font-bold text-gray-500 mt-4 ">
+                    Jahon | 19:20 | 07.06.2025
+                </p>
+                <h3
+                    class=" border-b border-[#303030] pb-4 text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
+                    Tramp va Musk yana bahslashib qolishdi
+                </h3>
+            </div>
+
+            <div class=" hidden md:block h-fit border-b border-[#303030] pb-3">
+                <p class="text-[11px] md:text-[14px] font-bold text-gray-500 mt-4 ">
+                    Jahon | 19:20 | 07.06.2025
+                </p>
+                <h3 class="h-fit  pb-4 text-sm md:text-[20px]  font-bold leading-2 md:leading-7 ">
+                    Tramp Suriyaga qarshi sanksiyalarni bekor qiluvchi farmonni imzoladi. Qanday yengilliklar
+                    berilmoqda?
+                </h3>
+                <p class="hidden md:block">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi necessitatibus nobis tempora
+                    molestiae a dicta quos sequi! Odio quisquam beatae adipisci? Illo aspernatur tempore, consequatur
+                    voluptate a nulla? Enim atque alias veritatis perspiciatis quas quod sed ipsam officia tenetur
+                    itaque. perspiciatis quas quod sed ipsam officia tenetur itaque. perspiciatis quas quod sed ipsam
+                    officia tenetur itaque.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col  w-full md:w-[60rem] h-[51rem] md:h-[40rem] gap-5">
+            <div
+                class="flex flex-row-reverse md:flex-col-reverse   justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+                <div class="flex flex-col items-start ">
+                    <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
+                        19:20 | 07.06.2025
+                    </p>
+                    <h3 class="text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
+                        Abbos Arag‘chi: Eron AQSh bilan muzokaralarga tayyor
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[60%] md:w-[450px] h-[80px] md:h-auto rounded-lg md:rounded-none"
+                    src="./assets/img/eran.jpg" alt="">
+            </div>
+
+            <div
+                class="flex flex-row-reverse md:flex-col-reverse    justify-between gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-none md:border-[#303030] ">
+                <div class="flex flex-col items-start ">
+                    <p class="text-[11px] md:text-[14px] font-bold text-gray-500">
+                        19:20 | 07.06.2025
+                    </p>
+                    <h3 class="text-sm md:text-[20px]  font-bold leading-2 md:leading-7 line-clamp-2">
+                        Isroil–Eron urushining Markaziy Osiyo uchun geosiyosiy mezonlari qanday?
+                    </h3>
+                </div>
+                <img class="flex items-start object-cover w-[80%] md:w-[450px] h-[80px] md:h-auto rounded-lg md:rounded-none"
+                    src="./assets/img/koreys.jpg" alt="">
+            </div>
+
+        </div>
     </div>
 
 
-    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <h1 class="text-4xl font-bold">Video yangiliklar</h1>
+    <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-3 md:mt-10 md:flex justify-between">
+        <h1 class="text-2xl md:text-4xl font-bold">Video yangiliklar</h1>
         <button class="btn hidden md:block">
             <div class="btn-inner">
                 <div class="hover-bg"></div>
@@ -304,7 +486,7 @@
                 src="https://storage.kun.uz/source/11/5VveuzCFznWkvM9kq_JnBUCZ6poTEiBu.jpg"
                 alt="this is israil and eron wars">
             <div class="flex flex-col">
-                <h1 class="text-2xl md:text-4xl font-bold">Isroil–Eron urushi (2025)</h1>
+                <h1 class="text-xl md:text-4xl font-bold">Isroil–Eron urushi (2025)</h1>
                 <p class="hidden md:block w-[900px] text-base">
                     2025 yil 13 iyunga o‘tar kechasi Isroil Eronning harbiy va yadroviy obektlariga zarbalar berishni
                     boshladi.
@@ -338,7 +520,7 @@
 
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
-        <h1 class="md:text-4xl font-bold">Intervyu</h1>
+        <h1 class="text-xl md:text-4xl font-bold">Intervyu</h1>
     </div>
 
 
@@ -386,7 +568,7 @@
             </div>
         </div>
 
-       <div class="group bg-[#26304D] flex items-start justify-start h-[230px] col-span-1 md:col-span-3
+        <div class="group bg-[#26304D] flex items-start justify-start h-[230px] col-span-1 md:col-span-3
          hover:bg-blue-900 text-white transition-colors duration-300 overflow-hidden shadow-md">
 
             <!-- Rasm -->
@@ -622,9 +804,92 @@
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
-
         </a>
     </div>
+
+
+
+
+
+  <!-- OVERLAY va MODAL -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
+    onclick="closeModal()"
+  ></div>
+<div
+  id="languageModal"
+  class="fixed bottom-[-300px] left-0 right-0 z-50 bg-white transition-all duration-500 ease-in-out md:hidden rounded-t-xl shadow-xl hidden"
+>
+  <div class="p-6">
+    <h2 class="text-xl font-bold mb-4 text-gray-900">Tilni tanlang:</h2>
+    <div class="flex flex-col gap-3">
+      <label class="flex items-center gap-3">
+        <input
+          type="radio"
+          name="language"
+          value="O‘zbek"
+          class="form-radio accent-gray-500 w-5 h-5"
+        />
+        <span class="text-base text-gray-900 font-medium">O‘zbek</span>
+      </label>
+      <label class="flex items-center gap-3">
+        <input
+          type="radio"
+          name="language"
+          value="Rus"
+          class="form-radio accent-gray-500 w-5 h-5"
+        />
+        <span class="text-base text-gray-900 font-medium">Rus</span>
+      </label>
+      <label class="flex items-center gap-3">
+        <input
+          type="radio"
+          name="language"
+          value="Ingliz"
+          class="form-radio accent-gray-500 w-5 h-5"
+        />
+        <span class="text-base text-gray-900 font-medium">Ingliz</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+    const overlay = document.getElementById("overlay");
+    const modal = document.getElementById("languageModal");
+    const button = document.getElementById("languageBtn");
+
+    function openModal() {
+      overlay.classList.remove("hidden");
+      modal.classList.remove("hidden");
+      setTimeout(() => {
+        modal.classList.remove("bottom-[-300px]");
+        modal.classList.add("bottom-0");
+      }, 50);
+    }
+
+    function closeModal() {
+      modal.classList.remove("bottom-0");
+      modal.classList.add("bottom-[-300px]");
+      setTimeout(() => {
+        overlay.classList.add("hidden");
+        modal.classList.add("hidden");
+      }, 500);
+    }
+
+    // Radio tanlanganda button textini yangilash
+    document.querySelectorAll('input[name="language"]').forEach(radio => {
+      radio.addEventListener("change", (e) => {
+        const til = e.target.value;
+        button.textContent = til;
+        closeModal();
+      });
+    });
+  </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
