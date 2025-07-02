@@ -17,14 +17,14 @@
             <div class="logo">
             <img class="w-[90px] md:w-28 toggleTheme" src="./assets/svg/Logo.svg" alt="this is logo ">
             </div>
-            <ul class="hidden md:flex gap-10 text-xl font-bold">
-                <li><a href="#">Oʻzbekiston</a></li>
-                <li><a href="#"></a>Jahon</li>
-                <li><a href="#"></a>Jamiyat</li>
-                <li><a href="#"></a>Sport</li>
-                <li><a href="#"></a>Fan-texnika</li>
-                <li><a href="#"></a>Nuqtai nazar</li>
-                <li><a href="#"></a>Audio</li>
+            <ul id="nav_link" class="hidden md:flex gap-10 text-xl font-bold">
+                <li><a href="#" data-category="general">Oʻzbekiston</a></li>
+                <li><a href="#" data-category="public"></a>Jahon</li>
+                <li><a href="#" data-category="world"></a>Jamiyat</li>
+                <li><a href="#" data-category="sport"></a>Sport</li>
+                <li><a href="#" data-category="texnalogy"></a>Fan-texnika</li>
+                <li><a href="#" data-category="read"></a>Nuqtai nazar</li>
+                <li><a href="#" data-category="listen"></a>Audio</li>
             </ul>
             <div class="function flex items-center justify-center gap-6">
                 <!-- language toggle start -->
@@ -74,11 +74,11 @@
 
     </header>
 
-    <main
-        class="news grid  md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
+    <main class="news grid  md:w-full max-w-[1700px] mx-auto md:grid-cols-12 grid-cols-1 grid-rows-auto gap-6 mt-5">
 
         <!-- Katta ekranda col-span-9, kichik ekranda col-span-1 -->
-        <div class="news_big w-[96%] md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
+        <div
+            class="news_big w-[96%] md:w-full max-w-[1700px] mx-auto flex flex-col md:flex-row col-span-1 md:col-span-9 row-span-1 md:row-span-6">
             <div class="flex flex-col ">
                 <h1
                     class="text-3sm mt-[-10px] mb-[10px] md:mb-2 md:text-4xl font-bold md:mt-10 mb-8 hover:text-blue-900 cursor-pointer">
@@ -95,7 +95,7 @@
                 alt="This is news image">
         </div>
 
-        <!-- Jahon yangiliklari -->
+        <!-- Jahon yangiliklari
         <div class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12 ">
             <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
             <div class="flex flex-col font-semibold md:font-medium border-b border-[#303030] pb-[6px]  mt-4">
@@ -115,10 +115,15 @@
 
             </div>
 
+        </div> -->
+        <div id="jahon"
+            class="jahon w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-3 md:col-start-10 row-span-1 md:row-span-12">
+            <h3 class="text-xl md:text-3xl font-bold mb-2">Soʻngi yangiliklar</h3>
+            <!-- JS orqali cardlar shu yerga qo‘shiladi -->
         </div>
-
         <!-- Animatsion yangiliklar -->
-        <div class="animative_news w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
+        <div
+            class="animative_news w-[96%] md:w-full max-w-[1700px] mx-auto col-span-1 md:col-span-6 row-span-1 md:row-span-6 md:row-start-7 bg-green-200">
             5
         </div>
 
@@ -219,31 +224,50 @@
 
     </div>
 
+    <!--
+<div id="loader" class="hidden text-center text-lg my-5">Yuklanmoqda...</div>
 
-    <div
-        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
-        <div
+    <div id="renderCard"
+        class=" grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
+        <div id=""
             class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
-            <img src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
-            <h1 class="text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
+            <img class="news-image" src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="This is card image ">
+            <h1 class="news-title text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1">
                 «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
             </h1>
         </div>
-        <!-- <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
-        <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
-        <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
-        <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
-        <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
-        <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div> -->
+    </div>
+ -->
+
+
+    <!-- Loader -->
+    <div id="loader" class="hidden text-center text-lg my-5 text-blue-600 font-semibold">
+        Yuklanmoqda...
     </div>
 
+    <!-- Yangiliklar chiqadigan joy -->
+    <div id="renderCard"
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 gap-1 md:gap-8">
+    </div>
+
+    <!-- Card template -->
+    <template id="cards">
+        <div
+            class="flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center h-fit md:h-[580px] shadow-md">
+            <img class="news-image w-full h-[250px] object-cover" src="" alt="">
+            <h1
+                class="news-title leading-8 mb-3 md:mb-0 text-[18px] md:text-[23px] md:text-[27px] font-bold p-2 md:p-5 mt-[2px] md:mt-1 ">
+            </h1>
+        </div>
+    </template>
+
+    <!--
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between">
         <h1 class="text-4xl font-bold">Maqolalar</h1>
-    </div>
+    </div> -->
 
 
-    <div
+    <!-- <div
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-4 grid-rows-auto gap-2">
         <div
             class=" flex flex-col overflow-hidden bg-[#D7D6DC] rounded-lg justify-start items-center  h-fit md:h-[580px]">
@@ -252,14 +276,16 @@
                 «Sensiz men bo‘lmasdim...» – futbolimizdagi eng muhim kun
             </h1>
         </div>
-        <!-- <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
+        <div class="bg-blue-200 flex items-center justify-center h-[300px] md:h-[500px]">2</div>
         <div class="bg-blue-300 flex items-center justify-center h-[300px] md:h-[500px]">3</div>
         <div class="bg-blue-400 flex items-center justify-center h-[300px] md:h-[500px]">4</div>
         <div class="bg-blue-500 flex items-center justify-center h-[300px] md:h-[500px]">5</div>
         <div class="bg-blue-600 flex items-center justify-center h-[300px] md:h-[500px]">6</div>
         <div class="bg-blue-700 flex items-center justify-center h-[300px] md:h-[500px]">7</div>
-        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div> -->
-    </div>
+        <div class="bg-blue-800 flex items-center justify-center h-[300px] md:h-[500px]">8</div>
+    </div> -->
+
+
 
     <div class="dolzarb w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-10 md:flex justify-between items-center">
         <div class="flex justify-between items-center gap-5">
@@ -294,30 +320,9 @@
         </button>
     </div>
 
-    <div
-        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-2">
-        <div class=" flex  justify-start gap-3 md:gap-5 h-fit col-span-1 md:col-span-3 border-b border-[#303030] pb-2 md:pb-5">
-            <img class="flex items-start object-cover md:w-[450px] h-[70px] md:h-[170px] " src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg"
-                alt="this is foto">
-            <div class="flex flex-col gap-1 ">
-                <p class="text-[11px] md:text-[16px] font-bold text-gray-500">21:11 | 28.09.2025 </p>
-                <h3 class="text-sm md:text-[23px] font-bold leading-2 md:leading-8">
-                    Eron XAEA bosh direktorini yadro inshootlariga kiritmaydigan bo‘ldi
-                </h3>
-                <p class="hidden md:block">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, ab.
+    <div id="gridNewsContainer"
+        class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-9">
 
-                </p>
-            </div>
-        </div>
-
-        <!-- <div class="bg-blue-300 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:col-span-3">2
-        </div>
-        <div class="bg-blue-400 flex items-center justify-center h-[200px] col-span-1 md:row-start-2 md:col-span-3">3
-        </div>
-        <div
-            class="bg-blue-500 flex items-center justify-center h-[200px] col-span-1 md:col-start-4 md:row-start-2 md:col-span-3">
-            4</div> -->
     </div>
 
 
@@ -353,9 +358,17 @@
 
     </div>
 
-    <div
+    <div id="block-news"
         class="grid w-[96%] md:w-full max-w-[1700px] mx-2 md:mx-auto mt-5 grid-cols-1 md:grid-cols-6 grid-rows-auto gap-5">
-        <div class="bg-blue-200 flex items-center justify-center h-[250px] col-span-1 md:col-span-3">1</div>
+        <div
+            class="bg-blue-200 flex items-start justify-start h-[250px] col-span-1 md:col-span-3 hover:bg-blue-900   hover:text-white">
+            <img class="w-[404px]" src="./assets/img/scm77FQ7rGC9ldRfimtf4JIeS9QSxbSf_medium.jpg" alt="this is image ">
+            <div class="p-6 ">
+                <p class="text-3xl font-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+            </div>
+        </div>
         <div class="bg-blue-300 flex items-center justify-center h-[250px] col-span-1 md:col-start-4 md:col-span-3">2
         </div>
 
@@ -505,7 +518,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -520,7 +534,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -535,7 +550,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -556,7 +572,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
@@ -571,7 +588,8 @@
                 <linearGradient id="custom_gradient" x1="16.5" y1="5.58521" x2="16.5" y2="21.4167"
                     gradientUnits="userSpaceOnUse">
                     <stop stop-color="#0F40A0" offset=""></stop>
-                    <stop offset="1" stop-color="#0C2F75"></stop>
+                    <stop offset="0%" stop-color="red" />
+
                 </linearGradient>
             </svg>
             <span class="hidden"></span>
