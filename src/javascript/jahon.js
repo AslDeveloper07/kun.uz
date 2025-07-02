@@ -1,13 +1,11 @@
 import { API_key, BASE_url } from "./config.js";
 
-// ⏰ Random vaqt generatori: HH:MM formatida
 function generateRandomTime() {
   const hour = String(Math.floor(Math.random() * 24)).padStart(2, "0");
   const minute = String(Math.floor(Math.random() * 60)).padStart(2, "0");
   return `${hour}:${minute}`;
 }
 
-// 📥 Jahon yangiliklarini chiqaruvchi funksiya
 export async function renderJahonNews(containerId) {
   const container = document.getElementById(containerId);
   if (!container) {
@@ -23,7 +21,7 @@ export async function renderJahonNews(containerId) {
     if (!res.ok) throw new Error("Failed to fetch news from API.");
 
     const data = await res.json();
-    const articles = data.articles?.slice(0, 16);
+    const articles = data.articles?.slice(0, 13);
 
     if (!articles || articles.length === 0) {
       container.innerHTML = `<p class="text-red-500 text-center mt-4">Yangilik topilmadi.</p>`;
