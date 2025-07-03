@@ -29,4 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   button.addEventListener("click", openModal);
   overlay.addEventListener("click", closeModal);
+  
 });
+
+
+
+
+
+
+
