@@ -1,5 +1,4 @@
 import "./javascript/darkMode";
-import "./style/style.css";
 import "./javascript/sidebar";
 import "./javascript/card";
 import { renderJahonNews } from "./javascript/jahon";
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBlockCards("container-id");
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   loadSavedLanguage();
   setupLanguageSelection();
@@ -29,12 +27,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   button.addEventListener("click", openModal);
   overlay.addEventListener("click", closeModal);
-  
+
 });
 
+import "./style/style.css";
 
+// import {
+//   API_KEY,
+//   BASE_URL,
+//   newsContainer,
+//   loadingIndicator,
+//   cardTemplate,
+//   realCardTemplate,
+//   coloredBlockTemplate,
+//   bgColors,
+//   showError,
+//   createDivider,
+//   createBlockCard,
+//   createGridCard,
+//   generateRandomTime,
+//   fetchAndShow,
+//   fetchAndShowWithBlocks,
+//   renderBlockCards,
+//   renderJahonNews,
+//   renderGridNews,
+//   setupThemeAndLanguage,
+//   setupMobileMenu,
+// } from "./js/JavaScripts.js";
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   setupThemeAndLanguage();
+//   setupMobileMenu();
 
-
-
-
+//   fetchAndShow(`${BASE_URL}/everything?q=post`);
+//   fetchAndShowWithBlocks(`${BASE_URL}/top-headlines?country=uz`);
+// });
