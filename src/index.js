@@ -1,7 +1,7 @@
-import "./javascript/script";
+import "./javascript/darkMode";
 import "./style/style.css";
 import "./javascript/sidebar";
-import "./javascript/API";
+import "./javascript/card";
 import { renderJahonNews } from "./javascript/jahon";
 import { renderGridNews } from "./javascript/news";
 import { renderBlockCards } from "./javascript/foot";

@@ -29,7 +29,7 @@ function createBlockCard({ title, urlToImage }) {
 export async function renderBlockCards(containerId) {
   const container = document.getElementById(containerId);
   if (!container) {
-    console.error("Container topilmadi:", containerId);
+    // console.error("Container topilmadi:", containerId);
     return;
   }
 

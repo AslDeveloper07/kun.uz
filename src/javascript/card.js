@@ -15,7 +15,7 @@ function createDivider() {
     "dolzarb col-span-full w-full mt-0 md:flex justify-between";
 
   const h1 = document.createElement("h1");
-  h1.className = "text-4xl font-bold";
+  h1.className = "text-2xl md:text-4xl font-bold";
   h1.textContent = "Maqolalar";
 
   divider.appendChild(h1);
