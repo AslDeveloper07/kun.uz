@@ -45,7 +45,7 @@ export async function renderJahonNews(containerId) {
       //Random vaqt quyish
       const span = document.createElement("span");
       span.className =
-        "flex text-sm font-normal md:font-samibold md:text-md text-blue-500 md:text-md mt-2 justify-end md:justify-start";
+        "flex text-xs md:text-sm font-normal md:font-samibold  text-blue-500 md:text-md mt-2 justify-end md:justify-start";
       span.textContent =
         index === 0 ? "Reklama" : `Jahon | ${generateRandomTime()}`;
 

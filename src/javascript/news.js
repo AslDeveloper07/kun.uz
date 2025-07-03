@@ -8,7 +8,7 @@ function createGridCard({ title, urlToImage, description, publishedAt }) {
 
   const img = document.createElement("img");
   img.className =
-    "flex items-start object-cover md:w-[450px] h-[70px] md:h-[170px]";
+    "flex items-start object-cover md:w-[450px] h-[70px] md:h-[170px] rounded-md md:rounded-none ";
   img.src = urlToImage || "./assets/img/default.jpg";
   img.alt = title;
 
@@ -27,7 +27,7 @@ function createGridCard({ title, urlToImage, description, publishedAt }) {
   h3.textContent = title;
 
   const p = document.createElement("p");
-  p.className = "hidden md:block line-clamp-2";
+  p.className = "hidden md:block line-clamp-2 text-gray-500";
   p.textContent = description || "Batafsil ma'lumot berilmagan.";
 
   content.appendChild(time);

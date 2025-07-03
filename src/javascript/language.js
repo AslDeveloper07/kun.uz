@@ -1,8 +1,7 @@
-// js/languageModal.js
-
 const overlay = document.getElementById("overlay");
 const modal = document.getElementById("languageModal");
 const button = document.getElementById("languageBtn");
+const languageText = document.getElementById("language");
 
 // Modalni ochish
 function openModal() {
@@ -28,7 +27,7 @@ function closeModal() {
 function loadSavedLanguage() {
   const savedLang = localStorage.getItem("selectedLanguage");
   if (savedLang) {
-    button.textContent = savedLang;
+    languageText.textContent = savedLang;
 
     const selectedRadio = document.querySelector(`input[name="language"][value="${savedLang}"]`);
     if (selectedRadio) selectedRadio.checked = true;
@@ -43,7 +42,7 @@ function setupLanguageSelection() {
       localStorage.setItem("selectedLanguage", lang);
       closeModal();
       setTimeout(() => {
-        button.textContent = lang;
+        languageText.textContent = lang;
       }, 500);
     });
   });
