@@ -70,5 +70,5 @@ async function fetchAndShow(url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetchAndShow(`${BASE_url}/everything?q=post`);
+  fetchAndShow(`${BASE_url}/everything?q=us`);
 });

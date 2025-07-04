@@ -61,5 +61,5 @@ async function fetchAndShowWithBlocks(url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetchAndShowWithBlocks(`${BASE_url}/top-headlines?country=uz`);
+  fetchAndShowWithBlocks(`${BASE_url}/top-headlines?country=us`);
 });
