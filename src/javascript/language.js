@@ -24,7 +24,7 @@ function closeModal() {
 }
 
 // Saqlangan tilni yuklash
-function loadSavedLanguage() {
+     function loadSavedLanguage() {
   const savedLang = localStorage.getItem("selectedLanguage");
   if (savedLang) {
     languageText.textContent = savedLang;

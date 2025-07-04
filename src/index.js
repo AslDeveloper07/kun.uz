@@ -1,3 +1,4 @@
+import "./style/style.css";
 import "./javascript/darkMode";
 import "./javascript/sidebar";
 import "./javascript/card";
@@ -30,35 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-import "./style/style.css";
 
-// import {
-//   API_KEY,
-//   BASE_URL,
-//   newsContainer,
-//   loadingIndicator,
-//   cardTemplate,
-//   realCardTemplate,
-//   coloredBlockTemplate,
-//   bgColors,
-//   showError,
-//   createDivider,
-//   createBlockCard,
-//   createGridCard,
-//   generateRandomTime,
-//   fetchAndShow,
-//   fetchAndShowWithBlocks,
-//   renderBlockCards,
-//   renderJahonNews,
-//   renderGridNews,
-//   setupThemeAndLanguage,
-//   setupMobileMenu,
-// } from "./js/JavaScripts.js";
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   setupThemeAndLanguage();
-//   setupMobileMenu();
-
-//   fetchAndShow(`${BASE_URL}/everything?q=post`);
-//   fetchAndShowWithBlocks(`${BASE_URL}/top-headlines?country=uz`);
-// });

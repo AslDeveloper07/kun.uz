@@ -9,7 +9,7 @@ function createGridCard({ title, urlToImage, description, publishedAt }) {
   const img = document.createElement("img");
   img.className =
     "flex items-start object-cover md:w-[450px] h-[70px] md:h-[170px] rounded-md md:rounded-none ";
-  img.src = urlToImage || "./assets/img/default.jpg";
+  img.src = urlToImage || "./assets/img/koreys.jpg";
   img.alt = title;
 
   const content = document.createElement("div");

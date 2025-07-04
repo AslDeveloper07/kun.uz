@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleSwitch.checked = isDark;
   applyTheme(isDark);
 
-  toggleSwitch.addEventListener("change", () => {
+  toggleSwitch.addEventListener("change", () => {   
     applyTheme(toggleSwitch.checked);
   });
 
